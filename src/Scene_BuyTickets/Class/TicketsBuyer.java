@@ -1,13 +1,13 @@
-package ProxyPattern;
+package Scene_BuyTickets.Class;
 
-class TicketBuyer implements Tickets {
+public class TicketsBuyer extends Tickets {
 	private String name;
 	
-	public TicketBuyer(String name) {
+	public TicketsBuyer(String name) {
 		this.name = name;
 	}
 	
-	public TicketBuyer() {
+	public TicketsBuyer() {
 		this.name = null;
 	}
 	

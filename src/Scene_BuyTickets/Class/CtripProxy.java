@@ -1,6 +1,7 @@
-package ProxyPattern;
+package Scene_BuyTickets.Class;
 
-class CtripProxy implements Tickets {
+
+public class CtripProxy extends Tickets {
 	private Tickets ticket;
 	
 	public CtripProxy () {
@@ -27,6 +28,5 @@ class CtripProxy implements Tickets {
 	}
 	
 }
-
 
 
