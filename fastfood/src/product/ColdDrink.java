@@ -1,7 +1,7 @@
-package Food;
+package product;
 
-import Pack.Bottle;
-import Pack.Packing;
+import pack.Bottle;
+import pack.Packing;
 
 public abstract class ColdDrink implements Item{
 
@@ -11,5 +11,5 @@ public abstract class ColdDrink implements Item{
     }
 
     @Override
-    public  abstract float price();
+    public  abstract float getPrice();
 }
