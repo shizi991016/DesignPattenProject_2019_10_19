@@ -1,4 +1,4 @@
-package Scene_BuyTickets.Class;
+package Scene_BuyTickets.Class.Tickets;
 
 
 public class CtripProxy extends Tickets {
