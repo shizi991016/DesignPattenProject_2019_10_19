@@ -1,26 +1,35 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-
+/**
+ * 花车游行类，内部由私有迭代器类，实现迭代器模式
+ */
 public class FloatParade {
+    //花车名字
     private String[] names = {"MickeyMouseFloat", "SnowWhiteFloat", "DumboFloat", "ToyStoryFloat"};
+    //存储的花车序列
     private ArrayList<Float> floats = new ArrayList<>();
+    //花车游行类实例对象，单例
     private static FloatParade floatParade;
+    //获得单例
     public static FloatParade getInstance() {
         if(floatParade == null) {
             floatParade = new FloatParade();
+            //构建花车序列
             for (int i = 0; i < floatParade.names.length; i++) {
                 floatParade.floats.add(new Float(floatParade.names[i]));
             }
         }
         return floatParade;
     }
+    //创建并获得当前状态备忘录
     public Memento createMemento() {
         return new Memento(this.floats);
     }
+    //从备忘录中恢复状态
     public void reinstateMemento(Memento memento) {
-        this.floats.clear();
         this.floats = memento.getOrderState();   
     }
+    //反转当前花车顺序
     public void reverseOrder() {
         ArrayList<Float> temp = new ArrayList<>();
         for (int i = this.floats.size() - 1; i >= 0; i--) {
@@ -28,6 +37,7 @@ public class FloatParade {
         }
         this.floats = temp;
     }
+    //随机打乱花车顺序
     public void randomOrder() {
         ArrayList<Float> temp = new ArrayList<>();
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -44,6 +54,7 @@ public class FloatParade {
         }
         this.floats = temp;
     }
+    //还原最初花车顺序
     public void originalOrder() {
         ArrayList<Float> temp = new ArrayList<>();
         for (int i = 0; i < this.names.length; i++) {
@@ -52,17 +63,22 @@ public class FloatParade {
         this.floats = temp;
     }
 
+    /**
+     * 迭代器模式，私有类，实现对花车游行类的迭代器，getIterator()方法获得迭代器实例
+     */
     public Iterator getIterator() {
         return new FloatParadeIterator();
     }
     private class FloatParadeIterator implements Iterator {
         private int index = 0;
+        //接口实现，判断是否还有内容
         public boolean hasNext() {
             if(index < names.length) {
                 return true;
             }
             return false;
         }
+        //接口实现，获得内容
         public Object next() {
             if(hasNext()) {
                 Float theFloat = floats.get(index);
