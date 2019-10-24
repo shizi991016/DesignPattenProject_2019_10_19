@@ -1,10 +1,16 @@
 package Scene_BuyTickets.Class.Pool;
 
+//数据连接管理模拟类：门面模式
 public class ConnectManager {
+    //用户名
     private String userName;
+    //数据连接名
     private Connection connection;
+    //数据连接对象池
     private Pool pool;
+    //数据连接栈
     private DataStack dataStack;
+    //数据连接监听器
     private Listener listener;
 
     public ConnectManager(){
@@ -23,6 +29,7 @@ public class ConnectManager {
         this.pool = pool;
     }
 
+    //建立连接
     public void Connect(){
         if (pool.get(connection))
         {
@@ -31,6 +38,7 @@ public class ConnectManager {
         }
     }
 
+    //断开连接
     public void Disconnect(){
         if (listener != null)
         {
