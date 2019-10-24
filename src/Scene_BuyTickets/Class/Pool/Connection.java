@@ -1,22 +1,22 @@
 package Scene_BuyTickets.Class.Pool;
 
 public class Connection {
-    private String connName;
+    private String userName;
 
     public Connection(String name){
-        this.connName = name;
+        this.userName = name;
     }
 
     public Connection(){
-        connName = "NO NAME";
+        userName = "NO NAME";
     }
 
     public String getConnName(){
-        return this.connName;
+        return this.userName;
     }
 
     public void setConnName(String name)
     {
-        this.connName = name;
+        this.userName = name;
     }
 }

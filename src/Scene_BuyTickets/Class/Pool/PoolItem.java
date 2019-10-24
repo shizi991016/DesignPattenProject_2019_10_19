@@ -28,4 +28,8 @@ public class PoolItem {
     public Connection getCoon(){
         return this.conn;
     }
+
+    public void setConnecion(Connection conn){
+        this.conn = conn;
+    }
 }
