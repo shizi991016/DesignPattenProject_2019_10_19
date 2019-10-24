@@ -1,4 +1,4 @@
-package Scene_KFC.Class.KFC;
+package Scene_KFC.Class;
 
 public class Tourist {
 	private String name;

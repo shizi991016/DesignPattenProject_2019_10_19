@@ -1,5 +1,5 @@
 package Scene_KFC.Test;
-import Scene_KFC.Class.KFC.Tourist;
+import Scene_KFC.Class.Tourist;
 public class MultitionTest {
 
 	public static void main(String[] args) {
