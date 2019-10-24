@@ -1,17 +1,15 @@
 package test;
 
-import meal.Meal;
-import meal.MealDecorator;
-import meal.NormalMeal;
-import meal.MealBuilder;
+import meal.*;
 
 public class DecoratorPattern {
     public static void main(String[] args) {
-        MealBuilder mealBuilder = new MealBuilder();
+        MealBuilder mealBuilderA = new MealBuilder();
+        Director directorA = new Director(mealBuilderA);
+        directorA.constructA();
+        NormalMeal MealA = mealBuilderA.createMeal();
 
-        NormalMeal AMeal = mealBuilder.prepareAMeal();
-
-        Meal superMeal=new MealDecorator(AMeal);//使用装饰者类创建新的超级套餐
+        Meal superMeal=new MealDecorator(MealA);//使用装饰者类创建新的超级套餐
 
         System.out.println("super Meal");
         superMeal.showItems();

@@ -7,37 +7,38 @@ package meal;
 import product.*;
 
 
-public class MealBuilder {
-
-    public NormalMeal prepareAMeal (){
-        NormalMeal meal = new NormalMeal();
+public class MealBuilder extends Builder{
+    public NormalMeal meal=new NormalMeal();
+    @Override
+    public void buildAPart1 (){
         meal.addItem(new ChickenBurger());
-        meal.addItem(new Coke());
-        meal.addItem(new Chips());
-        return meal;
     }//A套餐
-
-    public NormalMeal prepareBMeal (){
-        NormalMeal meal = new NormalMeal();
-        meal.addItem(new BigMac());
-        meal.addItem(new Juice());
+    @Override
+    public void buildAPart2 (){
+        meal.addItem(new Coke());
+    }//A套餐
+    @Override
+    public void buildAPart3 (){
         meal.addItem(new Chips());
-        return meal;
+    }//A套餐
+    @Override
+    public void buildBPart1 (){
+        meal.addItem(new BigMac());
     }//B套餐
-
-    public NormalMeal prepareCMeal (){
-        NormalMeal meal = new NormalMeal();
-        meal.addItem(new BigMac());
-        meal.addItem(new Coke());
+    @Override
+    public void buildBPart2 (){
+        meal.addItem(new Juice());
+    }//B套餐
+    @Override
+    public void buildBPart3 (){
         meal.addItem(new Chips());
+    }//B套餐
+    @Override
+    public NormalMeal createMeal()
+    {
         return meal;
-    }//C套餐
+    }
 
-    public NormalMeal prepareDMeal (){
-        NormalMeal meal = new NormalMeal();
-        meal.addItem(new ChickenBurger());
-        meal.addItem(new Coke());
-        meal.addItem(new Chips());
-        return meal;
-    }//D套餐
+
+
 }

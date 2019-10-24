@@ -1,20 +1,26 @@
 package test;
 
-import meal.Meal;
-import meal.MealDecorator;
-import meal.NormalMeal;
-import meal.MealBuilder;
+import meal.*;
 
 public class BuilderPattern {
     public static void main(String[] args) {
-        MealBuilder mealBuilder = new MealBuilder();
-
-        NormalMeal AMeal = mealBuilder.prepareAMeal();
+        MealBuilder mealBuilderA = new MealBuilder();
+        Director directorA = new Director(mealBuilderA);
+        directorA.constructA();
+        NormalMeal mealA=mealBuilderA.createMeal();
         System.out.println("A Meal");
-        AMeal.showItems();
-        System.out.println("Total Cost: " +AMeal.getCost());
+        mealA.showItems();
+        System.out.println("Total Cost: " +mealA.getCost());
 
-        NormalMeal BMeal = mealBuilder.prepareBMeal();
+        MealBuilder mealBuilderB = new MealBuilder();
+        Director directorB = new Director(mealBuilderB);
+        directorB.constructB();
+        NormalMeal mealB=mealBuilderB.createMeal();
+        System.out.println("A Meal");
+        mealB.showItems();
+        System.out.println("Total Cost: " +mealB.getCost());
+
+        /*NormalMeal BMeal = mealBuilder.prepareBMeal();
         System.out.println("\n\nB Meal");
         BMeal.showItems();
         System.out.println("Total Cost: " +BMeal.getCost());
@@ -27,6 +33,6 @@ public class BuilderPattern {
         NormalMeal DMeal = mealBuilder.prepareDMeal();
         System.out.println("\n\nD Meal");
         DMeal.showItems();
-        System.out.println("Total Cost: " +DMeal.getCost());
+        System.out.println("Total Cost: " +DMeal.getCost());*/
     }
 }
