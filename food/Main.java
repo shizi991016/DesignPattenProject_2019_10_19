@@ -7,12 +7,13 @@ public class Main {
       System.out.println("hello world");
       meat_or_veg am=new meat_food();
       meat_or_veg av=new veg_food();
-      food pfood=new principal_food(am,"hamburger");
-      food sfood=new snack(av,"fies");
-      food dfood=new drinking(av,"coke");
-      get_food(pfood);
-      get_food(sfood);
-      get_food(dfood);
+      food pfood=new principal_food(  am);
+      //food sfood=new snack(av);
+      //food dfood=new drinking(av);
+      pfood.food_classify();
+      //get_food(pfood);
+      //get_food(sfood);
+      //get_food(dfood);
 
 
 
