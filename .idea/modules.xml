@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DesignPattern.iml" filepath="$PROJECT_DIR$/DesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/DesignPattenProject_2019_10_19.iml" filepath="$PROJECT_DIR$/src/DesignPattenProject_2019_10_19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPattenProject_2019_10_191.iml" filepath="$PROJECT_DIR$/DesignPattenProject_2019_10_191.iml" />
     </modules>
   </component>
 </project>

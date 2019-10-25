@@ -1,5 +1,6 @@
 package Scene_InPark.Class.Facilitie;
 import java.util.*;
+
 public class DreamIsland {
 	//享元工厂，是单例，用static
 	private static DreamIsland singleton = new DreamIsland();
@@ -15,7 +16,7 @@ public class DreamIsland {
 		return singleton;
 	}
 	//将所有设施及其名字作为享元
-	public synchronized Facilitie getFacilitie(String name)
+	public synchronized Facilitie getFacilitie(String name,int type)
 	{
 		//用名字取出具体设施
 		Facilitie fc=(Facilitie)pool.get(name);
@@ -23,9 +24,6 @@ public class DreamIsland {
 		if(fc==null)
 		{
 			FacilitieFactory fcFactory;
-			Scanner sc = new Scanner(System.in);
-			System.out.print("请输入设施类型:1为具体设施，2为区域");
-			int type=sc.nextInt();
 			if (type==1)
 			{
 				System.out.println("梦幻岛:获取设施:创建具体设施工厂");

@@ -1,5 +1,9 @@
-package test;
+package Test;
 
+import Class.product.BigMac;
+import Class.product.ChickenBurger;
+import Class.product.Chips;
+import Class.product.Coke;
 import product.*;
 import type.*;
 
@@ -14,10 +18,10 @@ public class BridgePattern {
         Coke coke=new Coke();
         System.out.println("Coke  ");
 
-        bigmac.meat_or_veg_classify();
-        chick.meat_or_veg_classify();
-        chips.meat_or_veg_classify();
-        coke.meat_or_veg_classify();
+        bigmac.am.meat_or_veg_classify();
+        chick.am.meat_or_veg_classify();
+        chips.am.meat_or_veg_classify();
+        coke.am.meat_or_veg_classify();
 
 
 

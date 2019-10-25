@@ -1,28 +1,26 @@
 package Test;
 
 
-import Class.meal.Director;
-import Class.meal.MealBuilder;
-import Class.meal.NormalMeal;
+import Class.meal.*;
 
 public class BuilderPattern {
     public static void main(String[] args) {
-        MealBuilder mealBuilderA = new MealBuilder();
-        Director directorA = new Director(mealBuilderA);
-        directorA.constructA();
-        NormalMeal mealA=mealBuilderA.createMeal();
+        Director director = new Director();
+        MealBuilder A_mealbuilder=new AMealBuilder();
+        MealBuilder B_mealbuilder=new BMealBuilder();
+        director.setMealBuilder(A_mealbuilder);
+        director.constructMeal();;
+        NormalMeal mealA=director.getMeal();
         System.out.println("A Meal");
         mealA.showItems();
         System.out.println("Total Cost: " +mealA.getCost());
 
-        MealBuilder mealBuilderB = new MealBuilder();
-        Director directorB = new Director(mealBuilderB);
-        directorB.constructB();
-        NormalMeal mealB=mealBuilderB.createMeal();
-        System.out.println("A Meal");
+        director.setMealBuilder(B_mealbuilder);
+        director.constructMeal();;
+        NormalMeal mealB=director.getMeal();
+        System.out.println("B Meal");
         mealB.showItems();
         System.out.println("Total Cost: " +mealB.getCost());
-
         /*NormalMeal BMeal = mealBuilder.prepareBMeal();
         System.out.println("\n\nB Meal");
         BMeal.showItems();
