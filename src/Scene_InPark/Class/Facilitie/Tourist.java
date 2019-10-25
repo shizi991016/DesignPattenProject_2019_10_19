@@ -1,10 +1,7 @@
 package Scene_InPark.Class.Facilitie;
 
-<<<<<<< HEAD
-=======
 import Scene_InPark.Class.Broadcast.Broadcast;
 
->>>>>>> add broadcast
 public class Tourist {
 	//当前所在设施
 	private Facilitie currentFacilitie;
@@ -26,8 +23,6 @@ public class Tourist {
 		//更新所在设施
 		currentFacilitie=togo;
 	}
-<<<<<<< HEAD
-=======
 
 	//即将闭园，游客行为改变
 	public void changeBehavior() {
@@ -59,5 +54,4 @@ public class Tourist {
 					"寻找" + lostname + "的信息");
 		}
 	}
->>>>>>> add broadcast
 }
