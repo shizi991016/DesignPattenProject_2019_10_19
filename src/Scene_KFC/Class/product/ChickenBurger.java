@@ -1,8 +1,12 @@
 package product;
 
 /*
- *鸡肉堡类继承自食物类，实现了弱不变模式
+ *鸡肉堡类继承自食物类
+ * 实现了弱不变模式
+ * 实现了原型模式
+ * 实现了桥接模式
  */
+
 
 import type.Meat_food;
 import type.Veg_food;
