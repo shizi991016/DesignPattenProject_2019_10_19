@@ -1,5 +1,10 @@
 package Scene_InPark.Class.Facilitie;
 
+<<<<<<< HEAD
+=======
+import Scene_InPark.Class.Broadcast.Broadcast;
+
+>>>>>>> add broadcast
 public class Tourist {
 	//当前所在设施
 	private Facilitie currentFacilitie;
@@ -21,4 +26,38 @@ public class Tourist {
 		//更新所在设施
 		currentFacilitie=togo;
 	}
+<<<<<<< HEAD
+=======
+
+	//即将闭园，游客行为改变
+	public void changeBehavior() {
+
+		int idea = (int) (Math.random() * 2);
+
+		if (idea == 0) {
+			System.out.println("Tourist:changeBehavior:" + this.name + "改变行为，溜进厕所，留在园内");
+		}
+		if (idea == 1) {
+			System.out.println("Tourist:changeBehavior:" + this.name + "改变行为，出园回家");
+		}
+		if (idea == 2){
+			System.out.println("Tourist:changeBehavior:" + this.name + "改变行为，入住酒店");
+		}
+	}
+
+	//委托广播寻人寻物
+	public void lookingFor (String lostName , Broadcast broadcast){
+		System.out.println("Tourist:lookingFor:游客" + this.name + "委托广播发布寻找" + lostName );
+		broadcast.notifyLookingFor (lostName, this, this.name);
+	}
+
+	//接收广播寻人寻物通知
+	public void receiveSearchInformation (String lostname, Tourist seeker){
+		//如果寻物的不是自己，则听到广播消息
+		if(seeker != this){
+			System.out.println("Tourist:receiveSearchInformation:" + this.name + "听到" + seeker.name +
+					"寻找" + lostname + "的信息");
+		}
+	}
+>>>>>>> add broadcast
 }
