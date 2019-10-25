@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream:src/Scene_KFC/Class/KFC/Tourist.java
 package Scene_KFC.Class.KFC;
 
+=======
+package Class;
+import  Class.KFC;
+>>>>>>> Stashed changes:src/Scene_KFC/Class/Tourist.java
 public class Tourist {
 	private String name;
 	private KFC currentKFC;

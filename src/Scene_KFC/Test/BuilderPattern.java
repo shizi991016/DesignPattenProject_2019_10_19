@@ -1,6 +1,9 @@
-package test;
+package Test;
 
-import meal.*;
+
+import Class.meal.Director;
+import Class.meal.MealBuilder;
+import Class.meal.NormalMeal;
 
 public class BuilderPattern {
     public static void main(String[] args) {

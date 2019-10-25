@@ -1,4 +1,4 @@
-package meal;
+package Class.meal;
 /*
 *套餐的抽象装饰类
  */

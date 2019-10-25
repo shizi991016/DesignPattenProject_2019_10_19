@@ -1,12 +1,19 @@
-package product;
+package Class.product;
 
 /*
  *鸡肉堡类继承自食物类，实现了弱不变模式
  */
 
+<<<<<<< Updated upstream:src/Scene_KFC/Class/KFC/product/ChickenBurger.java
 import type.Meat_food;
 import type.Veg_food;
 import type.Meat_or_veg;
+=======
+
+import Class.type.Meat_food;
+import Class.type.Meat_or_veg;
+
+>>>>>>> Stashed changes:src/Scene_KFC/Class/product/ChickenBurger.java
 
 
 public class ChickenBurger extends Food {

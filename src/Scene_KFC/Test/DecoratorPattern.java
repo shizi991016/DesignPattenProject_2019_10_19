@@ -1,6 +1,7 @@
-package test;
+package Test;
 
-import meal.*;
+import Class.meal.*;
+
 
 public class DecoratorPattern {
     public static void main(String[] args) {

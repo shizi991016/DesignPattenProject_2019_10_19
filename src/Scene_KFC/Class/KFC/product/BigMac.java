@@ -1,12 +1,11 @@
-package product;
+package Class.product;
 /*
 *巨无霸类继承自食物类，实现了弱不变模式
  */
 
 
-import type.Meat_food;
-import type.Veg_food;
-import type.Meat_or_veg;
+import Class.type.Meat_food;
+import Class.type.Meat_or_veg;
 
 public class BigMac extends Food {
     private float price;                //巨无霸的价格，属性私有满足不变模式

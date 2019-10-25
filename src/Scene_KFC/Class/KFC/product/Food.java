@@ -1,8 +1,8 @@
-package product;
+package Class.product;
 
-import type.Meat_or_veg;
+import Class.type.Meat_or_veg;
 import pack.Packing;
-import pack.Wrapper;
+import Class.pack.Wrapper;
 
 public abstract class Food implements Item{
 

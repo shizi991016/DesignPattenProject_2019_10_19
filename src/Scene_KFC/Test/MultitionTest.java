@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 package Scene_KFC.Test;
 import Scene_KFC.Class.KFC.Tourist;
+=======
+package Test;
+import Class.Tourist;
+>>>>>>> Stashed changes
 public class MultitionTest {
 
 	public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package product;
+package Class.product;
 
-import pack.Bottle;
+import Class.pack.Bottle;
 import pack.Packing;
 
 public abstract class ColdDrink implements Item{

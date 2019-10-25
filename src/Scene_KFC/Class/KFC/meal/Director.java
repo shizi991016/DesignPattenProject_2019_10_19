@@ -1,4 +1,4 @@
-package meal;
+package Class.meal;
 
 public class Director {    // 将一个复杂的构建过程与其表示相分离
     private Builder builder;    // 针对接口编程，而不是针对实现编程

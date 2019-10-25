@@ -1,13 +1,12 @@
-package product;
+package Class.product;
 
 /*
  *可乐类继承自冷饮类，实现了弱不变模式
  */
 
 
-import type.Meat_food;
-import type.Veg_food;
-import type.Meat_or_veg;
+import Class.type.Meat_or_veg;
+
 
 public class Coke extends ColdDrink {
 

@@ -1,4 +1,4 @@
-package product;
+package Class.product;
 
 /*
  *食物与冷饮的抽象类

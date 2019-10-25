@@ -1,4 +1,4 @@
-package meal;
+package Class.meal;
 /*
 *套餐的装饰类，用来为普通套餐增加额外功能
 * 此处是扩展showItems，增加一个米奇的娃娃

@@ -1,10 +1,10 @@
-package meal;
+package Class.meal;
 
 /*
 *套餐的建造者类，负责建立套餐对象
  */
 
-import product.*;
+import Class.product.*;
 
 
 public class MealBuilder extends Builder{

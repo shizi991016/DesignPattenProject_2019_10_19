@@ -1,13 +1,13 @@
-package product;
+package Class.product;
 
 /*
  *薯条类继承自食物类，实现了弱不变模式
  */
 
 
-import type.Meat_food;
-import type.Veg_food;
-import type.Meat_or_veg;
+import Class.type.Meat_or_veg;
+import Class.type.Veg_food;
+
 
 public class Chips extends Food {
 
