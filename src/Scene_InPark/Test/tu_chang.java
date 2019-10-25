@@ -32,9 +32,9 @@ public class tu_chang {
         areaB.addChild(rollerCoaster);
         areaC.addChild(KFC);
 
-        System.out.println("全体设施结构为：");
+        System.out.println("梦幻岛：全体设施结构为：");
         System.out.println(dreamIsland.printAll());
-        System.out.println("过山车的地址为：");
+        System.out.println("梦幻岛：过山车的地址为：");
         System.out.println(rollerCoaster.printDirectory());
     }
 }
