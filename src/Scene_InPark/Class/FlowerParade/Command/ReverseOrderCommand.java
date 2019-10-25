@@ -1,3 +1,5 @@
+package Command;
+import Floats.*;
 /**
  * 命令模式，子类，反转当前花车顺序
  */
@@ -6,6 +8,7 @@ public class ReverseOrderCommand extends Command {
     protected static FloatParade receiver = FloatParade.getInstance();
     //执行命令
     public void action() {
+        System.out.print("Reverse Order: ");
         receiver.reverseOrder();
     }
 }

@@ -1,11 +1,13 @@
+package Floats;
+import Memento.*;
 /**
  * 花车类，存储花车的名字
  */
-public class Float {
+public class Floats {
     //花车名字
     private String name;
     //构造函数
-    public Float(String name) {
+    public Floats(String name) {
         this.name = name;
     }
     //获得花车名字

@@ -1,3 +1,5 @@
+package Floats;
+import Memento.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 /**
@@ -7,7 +9,7 @@ public class FloatParade {
     //花车名字
     private String[] names = {"MickeyMouseFloat", "SnowWhiteFloat", "DumboFloat", "ToyStoryFloat"};
     //存储的花车序列
-    private ArrayList<Float> floats = new ArrayList<>();
+    private ArrayList<Floats> floats = new ArrayList<>();
     //花车游行类实例对象，单例
     private static FloatParade floatParade;
     //获得单例
@@ -16,7 +18,7 @@ public class FloatParade {
             floatParade = new FloatParade();
             //构建花车序列
             for (int i = 0; i < floatParade.names.length; i++) {
-                floatParade.floats.add(new Float(floatParade.names[i]));
+                floatParade.floats.add(new Floats(floatParade.names[i]));
             }
         }
         return floatParade;
@@ -31,7 +33,7 @@ public class FloatParade {
     }
     //反转当前花车顺序
     public void reverseOrder() {
-        ArrayList<Float> temp = new ArrayList<>();
+        ArrayList<Floats> temp = new ArrayList<>();
         for (int i = this.floats.size() - 1; i >= 0; i--) {
             temp.add(this.floats.get(i));
         }
@@ -39,7 +41,7 @@ public class FloatParade {
     }
     //随机打乱花车顺序
     public void randomOrder() {
-        ArrayList<Float> temp = new ArrayList<>();
+        ArrayList<Floats> temp = new ArrayList<>();
         HashMap<Integer, Integer> map = new HashMap<>();
         int num;
         int key = 0;
@@ -56,9 +58,9 @@ public class FloatParade {
     }
     //还原最初花车顺序
     public void originalOrder() {
-        ArrayList<Float> temp = new ArrayList<>();
+        ArrayList<Floats> temp = new ArrayList<>();
         for (int i = 0; i < this.names.length; i++) {
-            temp.add(new Float(names[i]));
+            temp.add(new Floats(names[i]));
         }
         this.floats = temp;
     }
@@ -81,7 +83,7 @@ public class FloatParade {
         //接口实现，获得内容
         public Object next() {
             if(hasNext()) {
-                Float theFloat = floats.get(index);
+                Floats theFloat = floats.get(index);
                 index++;
                 return theFloat;
             }

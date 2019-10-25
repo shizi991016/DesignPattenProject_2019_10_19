@@ -1,3 +1,4 @@
+package Interpret;
 import java.util.HashMap;
 /**
  * 答案类，将各种店的编号与解释结果封装，通过getAnswer()方法获得结果 
