@@ -11,12 +11,12 @@ public class Tourist {
 		currentFacilitie=null;
 	}
 	//访问某个设施的函数
-	public void goToFacilitie(String name)
+	public void goToFacilitie(String name,int type)
 	{
 		//取得享元工厂单例
 		DreamIsland factory=DreamIsland.getInstance();
 		//访问享元工厂取得目标享元
-		Facilitie togo=factory.getFacilitie(name);
+		Facilitie togo=factory.getFacilitie(name,type);
 		System.out.println("Tourist:"+this.name+":gotoFacilitie:从享元工厂取出享元"+name);
 		//更新所在设施
 		currentFacilitie=togo;
