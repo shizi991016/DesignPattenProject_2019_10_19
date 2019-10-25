@@ -4,7 +4,7 @@ import Sence_InPark.Class.TourPlan.RealizePlayPlan;
 
 import java.util.Scanner;
 
-public class SenceTourPlanTest {
+public class TourPlanTest {
     public void senceTourPlanTest(){
         Scanner scan = new Scanner(System.in);
         String morningPlan = "";
@@ -17,6 +17,9 @@ public class SenceTourPlanTest {
         }
         mPlan.setMorningPlan(morningPlan);
         System.out.println("请选择下午的游玩计划：Strategy1(1),Strategy2(2),Strategy3(3)");
+        System.out.println("Strategy1: 过山车 游乐园 滑雪   优势：不排队");
+        System.out.println("strategy2: 跳水   跳楼机 跳伞   优势：玩的爽");
+        System.out.println("strategy3: 唱     跳     rap    优势：花钱少");
         if(scan.hasNextInt()){
             afternoonPlan = scan.nextInt();
         }
