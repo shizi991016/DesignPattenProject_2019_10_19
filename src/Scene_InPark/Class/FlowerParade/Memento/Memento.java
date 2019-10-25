@@ -1,4 +1,4 @@
-package Memento;
+package Scene_InPark.Class.FlowerParade.Memento;
 import java.util.ArrayList;
 /**
  * 备忘录模式，备忘录类

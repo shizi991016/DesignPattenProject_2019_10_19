@@ -1,5 +1,5 @@
 package Test;
-import Interpret.*;
+import Scene_InPark.Class.Interpret.*;
 import java.util.HashMap;
 import java.util.Scanner;
 

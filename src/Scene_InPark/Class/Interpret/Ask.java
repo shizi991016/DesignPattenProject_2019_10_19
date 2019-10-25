@@ -1,4 +1,4 @@
-package Interpret;
+package Scene_InPark.Class.Interpret;
 /**
  * 用于配置上下问环境的类，产生两组终结符对象，并产生非终结符对象
  */

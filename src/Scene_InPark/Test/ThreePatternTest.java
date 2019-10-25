@@ -1,8 +1,7 @@
 package Test;
-import Command.*;
-import Floats.*;
-import Memento.*;
-
+import Scene_InPark.Class.FlowerParade.Command.*;
+import Scene_InPark.Class.FlowerParade.Floats.*;
+import Scene_InPark.Class.FlowerParade.Memento.*;
 import java.util.List;
 import java.util.Scanner;
 
@@ -24,7 +23,7 @@ public class ThreePatternTest {
         //初始化部分命令
         Command commands[] = {new ReverseOrderCommand(), new RandomOrderCommand(), new OriginalOrderCommand()};
         //打印初始花车游行序列
-        System.out.print("The original:");
+        System.out.print("The original: ");
         printName(floatParade);
         //执行命令，并打印执行后花车游行序列
         for (int i = 0; i < commands.length; i++) {
