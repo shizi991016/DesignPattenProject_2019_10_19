@@ -23,6 +23,7 @@ public class ChickenBurger extends Food {
 
     public ChickenBurger clone(){//原型模式，复制食物
         ChickenBurger chickenburger=new ChickenBurger();
+        System.out.println("Clone ChickenBurger  ");
         return chickenburger;
     }
 

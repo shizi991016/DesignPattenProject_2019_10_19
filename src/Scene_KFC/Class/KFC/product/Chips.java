@@ -23,6 +23,7 @@ public class Chips extends Food {
 
     public Chips clone(){//原型模式，复制食物
         Chips chips=new Chips();
+        System.out.println("Clone Chips  ");
         return chips;
     }
 

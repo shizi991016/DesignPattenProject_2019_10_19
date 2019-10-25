@@ -21,6 +21,7 @@ public class BigMac extends Food {
     }
     public BigMac clone(){//原型模式，复制食物
         BigMac bigmac=new BigMac();
+        System.out.println("Clone BigMac  ");
         return bigmac;
     }
 

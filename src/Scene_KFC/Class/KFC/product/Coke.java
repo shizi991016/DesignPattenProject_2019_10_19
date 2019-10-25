@@ -21,6 +21,7 @@ public class Coke extends ColdDrink {
 
     public Coke clone(){//原型模式，复制食物
         Coke coke=new Coke();
+        System.out.println("Clone Coke  ");
         return coke;
     }
 
