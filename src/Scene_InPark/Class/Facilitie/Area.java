@@ -4,13 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Area extends Facilitie{
-	//private String name;
 
+//private String name;
 	private List<Facilitie> mFacilities;
 
 	public Area(String name)
 	{
 		this.name=name;
+		this.TouristFlow=0;
 		this.mFacilities=new ArrayList<Facilitie>();
 	}
 
@@ -39,4 +40,9 @@ public class Area extends Facilitie{
     public Facilitie getChild(int index){
 	    return this.mFacilities.get(index);
     }
+
+    @Override
+	public void accept(Tourist tourist){
+		this.accept(tourist);
+	}
 }

@@ -4,6 +4,7 @@ package Scene_InPark.Test;
 import Scene_InPark.Class.Facilitie.Area;
 import Scene_InPark.Class.Facilitie.DreamIsland;
 import Scene_InPark.Class.Facilitie.Facilitie;
+import Scene_InPark.Class.Facilitie.Tourist;
 
 public class tu_chang {
     public static void main(String[] args){
@@ -36,5 +37,13 @@ public class tu_chang {
         System.out.println(dreamIsland.printAll());
         System.out.println("梦幻岛：过山车的地址为：");
         System.out.println(rollerCoaster.printDirectory());
+
+        Tourist chang = new Tourist("刘畅");
+        chang.Visit(areaC);
+        chang.Visit(rollerCoaster);
+        chang.Visit(areaC);
+        System.out.println("客流量为：");
+        System.out.println("areaC:"+areaC.returnFlow());
+        System.out.println("rollerCoaster:"+rollerCoaster.returnFlow());
     }
 }

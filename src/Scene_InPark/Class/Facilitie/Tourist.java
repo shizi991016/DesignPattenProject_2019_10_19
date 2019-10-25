@@ -54,4 +54,8 @@ public class Tourist {
 					"寻找" + lostname + "的信息");
 		}
 	}
+
+	public void Visit(Facilitie fc){
+		fc.TouristFlow++;
+	}
 }
