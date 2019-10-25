@@ -5,7 +5,7 @@ import Scene_InPark.Class.FlowerParade.Memento.*;
 import java.util.List;
 import java.util.Scanner;
 
-public class ThreePatternTest {
+public class FlowerParadeTest {
     //用于打印花车游行序列中花车的名字，采用迭代器
     public static void printName(FloatParade floatParade) {
         Iterator it = floatParade.getIterator();
