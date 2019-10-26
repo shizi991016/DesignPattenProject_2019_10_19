@@ -8,6 +8,21 @@ public class DesignPattern_main {
 		ProxyPatternTest.ProxyPatternTest();
 		//FacadePatternTest facadePatternTest = new FacadePatternTest();
 		FacadePatternTest.FacadePatternTest();
+//		// 模式一 前端控制器
+//		FrontControllerTest test1 = new FrontControllerTest();
+//		test1.FrontController();
+//		// 模式二 简单工厂
+//		EasyFactoryTest test2 = new EasyFactoryTest();
+//		test2.EasyFactory();
+//		// 模式三 过滤器模式
+//		FilterPatternTest test3 = new FilterPatternTest();
+//		test3.FilterPattern();
+//		// 模式四 空对象模式
+//		NullObjectTest test4 = new NullObjectTest();
+//		test4.NullObject();
+//		// 模式五 状态模式
+//		StatePatternTest test5 = new StatePatternTest();
+//		test5.StatePattern();
 	}
 
 }
