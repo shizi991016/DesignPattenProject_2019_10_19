@@ -9,7 +9,7 @@ public abstract class Food implements Item{
 
     @Override
     public Packing packing(){
-        return new Wrapper();
+        return new Wrapper("paper");
     }
 
     @Override
