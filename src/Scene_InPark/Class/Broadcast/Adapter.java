@@ -10,7 +10,9 @@ public class Adapter {
     private int language = 1;
     //选择需要的语言翻译
     public Adapter() {
-        System.out.print("请选择您需要切换的语言：1、中文，2、英文，3、德文");
+        System.out.print("Adapter:Adapter:请选择您需要切换的语言：1、中文，2、English，3、Deutsch\n" + //中文
+                "Please select the language you need to switch：1、中文，2、English，3、Deutsch\n" +//英文
+                "Bitte wählen Sie die gewünschte Sprache aus：1、中文，2、English，3、Deutsch");//德文
 
         Scanner sc = new Scanner(System.in);
         language = sc.nextInt();

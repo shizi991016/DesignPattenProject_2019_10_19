@@ -48,6 +48,8 @@ public class Broadcast {
             //播放切换后的语音
             System.out.println("Broadcast:changeGardenState:" + message);
 
+            //通知所有游客改变行为
+            notifyAllTourists();
         }
         else{
             System.out.println("Broadcast:changeGardenState:游园并未置为关闭状态，仍为开放中");

@@ -8,7 +8,7 @@ import Scene_InPark.Class.Facilitie.Tourist;
 import java.util.Scanner;
 
 public class BroadcastTest {
-    public static void main(String[] args) {
+    public static void BroadcastTest() {
         //默认切换语言为中文
 
         Broadcast broadcast = new Broadcast(); //实例化广播类
@@ -50,7 +50,13 @@ public class BroadcastTest {
         int entrust = sc1.nextInt();
 
         if(entrust == 1){
-            tourist1.lookingFor("钱包", broadcast);//选择委托
+
+            System.out.println("请问张三丢失了什么？请输入");
+            //张三输入丢失的东西
+            Scanner sc2 = new Scanner(System.in);
+            String lostName = sc2.next();
+
+            tourist1.lookingFor(lostName, broadcast);//委托广播广播
         }
         else if(entrust == 2){
             System.out.println("张三选择了自己找钱包");//不选择委托
