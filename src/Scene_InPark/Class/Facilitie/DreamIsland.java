@@ -41,4 +41,13 @@ public class DreamIsland {
 		}
 		return fc;
 	}
+	public synchronized Facilitie getFacilitie(String name)
+	{
+		Facilitie fc=(Facilitie)pool.get(name);
+		if(fc==null)
+		{
+			System.out.println("DreamIsland：getFacilitie:不存在名为"+name+"的设施");
+		}
+		return fc;
+	}
 }
