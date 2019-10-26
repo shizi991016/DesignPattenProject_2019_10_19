@@ -1,6 +1,6 @@
-package Sence_InPark.Test;
+package Scene_InPark.Test;
 
-import Sence_InPark.Class.TourPlan.RealizePlayPlan;
+import Scene_InPark.Class.TourPlan.RealizePlayPlan;
 
 import java.util.Scanner;
 

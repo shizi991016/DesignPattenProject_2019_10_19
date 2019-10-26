@@ -18,6 +18,10 @@ public class Pool {
         }
     }
 
+    public Pool(){
+	    addItems();
+    }
+
     //从对象池中获取一个空对象，并用Connection的值给对象赋值，返回true
     //若无可用空对象，则打印报错，并返回false
     public synchronized boolean get(Connection conn){

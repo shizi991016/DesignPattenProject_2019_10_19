@@ -13,7 +13,7 @@ public class PoolItem {
 
     public PoolItem(){
         this.conn = null;
-        this.isUsed = true;
+        this.isUsed = false;
     }
 
     //判断对象是否被使用
