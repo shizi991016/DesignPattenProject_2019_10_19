@@ -15,18 +15,22 @@ public class CtripProxy extends Tickets {
 	//模拟登录
 	@Override
 	public void Validate() {
+		System.out.println("欢迎使用携程");
+		System.out.println("携程提醒您：");
 		ticket.Validate();
 	}
 
 	//模拟选择门票类型
 	@Override
 	public void Select(String type) {
+		System.out.println("携程提醒您：");
 		ticket.Select(type);
 	}
 
 	//模拟支付
 	@Override
 	public void Pay() {
+		System.out.println("携程提醒您：");
 		ticket.Pay();
 	}
 	
