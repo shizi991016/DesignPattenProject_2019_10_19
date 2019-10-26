@@ -15,11 +15,14 @@ public class DataStack {
 
     //建立数据栈
     public void CreateDataStack(){
-        System.out.println("Set Data Stack to " + this.userName + "'s Connection");
+        System.out.println("创建连接数据栈...");
+        System.out.println("数据栈创建成功");
+        System.out.println("开始记录用户 " + this.userName + " 的连接数据");
     }
 
     //销毁数据展
     public  void DestroyDataStack(){
-        System.out.println("Destroy Data Stack");
+        System.out.println("注销数据栈...");
+        System.out.println("数据栈注销成功");
     }
 }

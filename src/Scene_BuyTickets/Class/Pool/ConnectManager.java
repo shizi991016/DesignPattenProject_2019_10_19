@@ -33,8 +33,10 @@ public class ConnectManager {
     public void Connect(){
         if (pool.get(connection))
         {
+            System.out.println("ConnectManager创建连接中...");
             listener.Listen();
             dataStack.CreateDataStack();
+            System.out.println("ConnectManager连接创建成功");
         }
     }
 
@@ -42,8 +44,11 @@ public class ConnectManager {
     public void Disconnect(){
         if (listener != null)
         {
+            System.out.println("ConnectManager注销连接中...");
+            pool.release(this.connection);
             listener.DestroyListener();
             dataStack.DestroyDataStack();
+            System.out.println("ConnectManager连接注销成功");
         }
     }
 }
