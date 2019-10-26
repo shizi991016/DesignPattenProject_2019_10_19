@@ -1,4 +1,4 @@
-package Sence_InPark.Class.TourPlan;
+package Scene_InPark.Class.TourPlan;
 
 public class MyStrategyFactory extends StrategyFactory {
     //重载父类createStrategy()方法，返回MyStrategy实例

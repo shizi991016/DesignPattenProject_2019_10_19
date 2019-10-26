@@ -1,4 +1,4 @@
-package Sence_InPark.Class.TourPlan;
+package Scene_InPark.Class.TourPlan;
 
 public class RealizePlayPlan extends SpecialPlayPlan {
     private StrategyForAfternoonPlan strategy;

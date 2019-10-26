@@ -1,4 +1,4 @@
-package Sence_InPark.Class.TourPlan;
+package Scene_InPark.Class.TourPlan;
 
 public class MyStrategy extends Strategy {
     //构造函数;

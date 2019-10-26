@@ -1,7 +1,7 @@
-package Sence_InPark.Class.TourPlan;
+package Scene_InPark.Class.TourPlan;
 
-import Sence_InPark.Class.TourPlan.MyStrategyFactory;
-import Sence_InPark.Class.TourPlan.StrategyFactory;
+import Scene_InPark.Class.TourPlan.MyStrategyFactory;
+import Scene_InPark.Class.TourPlan.StrategyFactory;
 
 public abstract class StrategyForAfternoonPlan {
     StrategyFactory myStrategies = new MyStrategyFactory();

@@ -1,6 +1,6 @@
-package Sence_InPark.Class.TourPlan;
+package Scene_InPark.Class.TourPlan;
 
-import Sence_InPark.Class.TourPlan.Strategy;
+import Scene_InPark.Class.TourPlan.Strategy;
 
 import java.util.ArrayList;
 

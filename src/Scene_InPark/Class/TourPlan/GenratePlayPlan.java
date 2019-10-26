@@ -1,4 +1,4 @@
-package Sence_InPark.Class.TourPlan;
+package Scene_InPark.Class.TourPlan;
 
 public abstract class GenratePlayPlan {
     //迪士尼一日游计划模板，输出一日游中所有的活动；

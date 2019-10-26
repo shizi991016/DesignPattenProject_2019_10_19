@@ -1,6 +1,6 @@
-package Sence_InPark.Class.TourPlan;
+package Scene_InPark.Class.TourPlan;
 
-import Sence_InPark.Class.TourPlan.GenratePlayPlan;
+import Scene_InPark.Class.TourPlan.GenratePlayPlan;
 
 public abstract class SpecialPlayPlan extends GenratePlayPlan {
     private String morningPlan;
