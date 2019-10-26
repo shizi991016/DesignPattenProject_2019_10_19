@@ -40,16 +40,14 @@ public class Broadcast {
         //判断是否游园即将关闭，关闭则通知所有在名单中的游客
         if (!gardenState){
 
-            System.out.println("Broadcast:changeGardenState:游园状态置为闭园");
-
             //使用适配器切换语言
             String message = adapter.translate();
 
-            //播放切换后的语音
-            System.out.println("Broadcast:changeGardenState:" + message);
+            System.out.println("Broadcast:changeGardenState:游园状态置为闭园");
 
-            //通知所有游客改变行为
-            notifyAllTourists();
+            //使用切换后的语言通知所有游客
+            notifyAllTourists(message);
+
         }
         else{
             System.out.println("Broadcast:changeGardenState:游园并未置为关闭状态，仍为开放中");
@@ -78,6 +76,16 @@ public class Broadcast {
 
         for (int i = 0; i < noticeList.size(); i++) {
             noticeList.get(i).receiveSearchInformation(lostName, seeker);
+        }
+    }
+
+    //使用切换后的广播语言通知所有游客
+    private void notifyAllTourists(String message){
+
+        System.out.println("Broadcast:changeGardenState:" + message);
+
+        for (int i = 0; i < noticeList.size(); i++) {
+            noticeList.get(i).changeBehavior();
         }
     }
 }
