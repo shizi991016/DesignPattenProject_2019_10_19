@@ -1,22 +1,26 @@
 package Scene_BuyTickets.Class.Pool;
 
+//数据库连接模拟类
 public class Connection {
-    private String connName;
+    //用户名
+    private String userName;
 
     public Connection(String name){
-        this.connName = name;
+        this.userName = name;
     }
 
     public Connection(){
-        connName = "NO NAME";
+        userName = "NO NAME";
     }
 
+    //获得连接名
     public String getConnName(){
-        return this.connName;
+        return this.userName;
     }
 
+    //设置连接名
     public void setConnName(String name)
     {
-        this.connName = name;
+        this.userName = name;
     }
 }

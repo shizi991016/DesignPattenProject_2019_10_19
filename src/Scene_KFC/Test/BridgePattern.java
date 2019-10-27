@@ -1,5 +1,9 @@
-package test;
+package Test;
 
+import Class.product.BigMac;
+import Class.product.ChickenBurger;
+import Class.product.Chips;
+import Class.product.Coke;
 import product.*;
 import type.*;
 
