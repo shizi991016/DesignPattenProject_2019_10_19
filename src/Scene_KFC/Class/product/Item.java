@@ -5,7 +5,7 @@ package Class.product;
  */
 
 
-import pack.Packing;
+import Class.pack.Packing;
 public interface Item {
     public String getName();
     public Packing packing();

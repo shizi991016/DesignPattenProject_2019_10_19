@@ -1,7 +1,7 @@
 package Class.product;
 
 import Class.pack.Bottle;
-import pack.Packing;
+import Class.pack.Packing;
 /*
  *冷饮抽象类，对食物和冷饮接口的实现
  */

@@ -1,4 +1,4 @@
-package pack;
+package Class.pack;
 
 public abstract class Packing {
     public abstract String pack();

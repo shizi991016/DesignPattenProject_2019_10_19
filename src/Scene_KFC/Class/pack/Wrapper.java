@@ -4,7 +4,7 @@ package Class.pack;
  *包装纸类对包装接口的实现
  */
 
-public class Wrapper extends pack.Packing {
+public class Wrapper extends Packing {
     private String material;//成员属性私有，符合弱不变模式
     @Override
     public String pack(){
