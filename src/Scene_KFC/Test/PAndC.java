@@ -1,7 +1,7 @@
 
 package test;
 import ProducerAndComcumer.*;
-public class Main {
+public class PAndC {
     public static void main (String[] args)
     {
         Storage storage = new Storage();

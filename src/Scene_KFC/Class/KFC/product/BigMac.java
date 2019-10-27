@@ -11,7 +11,7 @@ import type.Meat_or_veg;
 public class BigMac extends Food {
     private float price;                //巨无霸的价格，属性私有满足不变模式
     private float weight;               //巨无霸的重量，属性私有满足不变模式
-    private Meat_or_veg am;//桥接模式分类成员
+    public Meat_or_veg am;//桥接模式分类成员
     //只有构造函数初始化了价格与重量，满足不变模式
     public BigMac(){
         this.price=15.0f;

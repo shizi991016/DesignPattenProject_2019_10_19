@@ -13,7 +13,7 @@ public class Coke extends ColdDrink {
 
     private float price;    //可乐的价格，属性私有满足不变模式
     private float volume;   //可乐的容量，属性私有满足不变模式
-    private Meat_or_veg am;//桥接模式分类成员
+    public Meat_or_veg am;//桥接模式分类成员
     public Coke(){
         this.price=7.0f;
         this.volume=300.0f;

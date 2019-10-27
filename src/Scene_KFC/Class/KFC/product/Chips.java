@@ -13,7 +13,7 @@ public class Chips extends Food {
 
     private float price;    //薯条的价格，属性私有满足不变模式
     private float weight;   //薯条的重量，属性私有满足不变模式
-    private Meat_or_veg am;//桥接模式分类成员
+    public Meat_or_veg am;//桥接模式分类成员
     public Chips(){
         this.price=10.0f;
         this.weight=100;
