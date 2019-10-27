@@ -1,11 +1,11 @@
-package product;
+package Class.product;
 
 /*
- *食物与冷饮的抽象类
+ *食物与冷饮的接口
  */
 
 
-import pack.Packing;
+import Class.pack.Packing;
 public interface Item {
     public String getName();
     public Packing packing();

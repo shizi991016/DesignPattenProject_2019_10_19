@@ -1,5 +1,5 @@
-package Scene_KFC.Class;
-
+package Class;
+import  Class.KFC;
 public class Tourist {
 	private String name;
 	private KFC currentKFC;

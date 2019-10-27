@@ -1,12 +1,12 @@
-package Scene_KFC.Test;
+package Test;
 
 
-import Scene_KFC.Class.handler.DirectorHandler;
-import Scene_KFC.Class.handler.Handler;
-import Scene_KFC.Class.handler.ManagerHandler;
-import Scene_KFC.Class.handler.WaiterHandler;
+import Class.handler.DirectorHandler;
+import Class.handler.Handler;
+import Class.handler.ManagerHandler;
+import Class.handler.WaiterHandler;
 
-public class ResponsbilityTest {
+public class ResponsbilityPattern {
     public static void main(String[] args)
     {
         //初始化责任链

@@ -1,4 +1,4 @@
-package Scene_KFC.Class;
+package Class;
 import java.util.*;
 //多例模式，至多允许在梦幻岛中开两家KFC
 public class KFC {

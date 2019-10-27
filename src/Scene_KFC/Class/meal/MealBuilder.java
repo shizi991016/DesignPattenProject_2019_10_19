@@ -1,45 +1,15 @@
-package meal;
-
+package Class.meal;
 /*
- *套餐的实际建造者类，负责建立套餐对象
- * 实现了建造者模式
+ *套餐的抽象建造者类，定义了一系列抽象方法
+ * 其中buildAPart1-3为建造A套餐所需的步骤
+ * buildBPart1-3为建造B套餐所需的步骤
  */
+public abstract class MealBuilder {
+    protected NormalMeal meal;
+    public abstract void buildPart1();
+    public abstract void buildPart2();
+    public abstract void buildPart3();
 
-import product.*;
-
-
-public class MealBuilder extends Builder{
-    public NormalMeal meal=new NormalMeal();
-    @Override
-    public void buildAPart1 (){
-        meal.addItem(new ChickenBurger());
-    }//A套餐
-    @Override
-    public void buildAPart2 (){
-        meal.addItem(new Coke());
-    }//A套餐
-    @Override
-    public void buildAPart3 (){
-        meal.addItem(new Chips());
-    }//A套餐
-    @Override
-    public void buildBPart1 (){
-        meal.addItem(new BigMac());
-    }//B套餐
-    @Override
-    public void buildBPart2 (){
-        meal.addItem(new Juice());
-    }//B套餐
-    @Override
-    public void buildBPart3 (){
-        meal.addItem(new Chips());
-    }//B套餐
-    @Override
-    public NormalMeal createMeal()
-    {
-        return meal;
-    }
-
-
-
+    public NormalMeal getMeal(){return meal;}
+    public void createNewMeal(){meal=new NormalMeal();}
 }

@@ -1,4 +1,4 @@
-package product;
+package Class.product;
 
 /*
  *果汁类继承自冷饮类，实现了弱不变模式
