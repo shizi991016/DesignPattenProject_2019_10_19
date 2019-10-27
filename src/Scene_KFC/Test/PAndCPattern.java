@@ -1,7 +1,7 @@
 
-package test;
-import ProducerAndComcumer.*;
-public class PAndC {
+package Test;
+import Class.ProducerAndComcumer.*;
+public class PAndCPattern {
     public static void main (String[] args)
     {
         Storage storage = new Storage();

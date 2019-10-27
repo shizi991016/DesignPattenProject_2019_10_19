@@ -6,7 +6,7 @@ import Class.handler.Handler;
 import Class.handler.ManagerHandler;
 import Class.handler.WaiterHandler;
 
-public class ResponsbilityTest {
+public class ResponsbilityPattern {
     public static void main(String[] args)
     {
         //初始化责任链

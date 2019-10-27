@@ -1,9 +1,9 @@
-package test;
+package Test;
 
-import product.*;
-import type.*;
+import Class.product.*;
+import Class.type.*;
 
-public class Prototype {
+public class PrototypePattern {
     public static void main(String[] args) {
         BigMac bigmac=new BigMac();
         System.out.println("Creat BigMac  ");

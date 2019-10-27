@@ -12,7 +12,6 @@ public class Coke extends ColdDrink {
 
     private float price;
     private float volume;
-    private Meat_or_veg am;//桥接模式分类成员
     public Coke(){
         this.price=7.0f;
         this.volume=300.0f;

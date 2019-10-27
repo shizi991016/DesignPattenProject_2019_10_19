@@ -4,8 +4,8 @@ import Class.product.BigMac;
 import Class.product.ChickenBurger;
 import Class.product.Chips;
 import Class.product.Coke;
-import product.*;
-import type.*;
+import Class.product.*;
+import Class.type.*;
 
 public class BridgePattern {
     public static void main(String[] args) {
@@ -21,7 +21,6 @@ public class BridgePattern {
         bigmac.am.meat_or_veg_classify();
         chick.am.meat_or_veg_classify();
         chips.am.meat_or_veg_classify();
-        coke.am.meat_or_veg_classify();
 
 
 

@@ -21,19 +21,6 @@ public class BuilderPattern {
         System.out.println("B Meal");
         mealB.showItems();
         System.out.println("Total Cost: " +mealB.getCost());
-        /*NormalMeal BMeal = mealBuilder.prepareBMeal();
-        System.out.println("\n\nB Meal");
-        BMeal.showItems();
-        System.out.println("Total Cost: " +BMeal.getCost());
 
-        NormalMeal CMeal = mealBuilder.prepareCMeal();
-        System.out.println("\n\nC Meal");
-        CMeal.showItems();
-        System.out.println("Total Cost: " +CMeal.getCost());
-
-        NormalMeal DMeal = mealBuilder.prepareDMeal();
-        System.out.println("\n\nD Meal");
-        DMeal.showItems();
-        System.out.println("Total Cost: " +DMeal.getCost());*/
     }
 }
