@@ -5,7 +5,6 @@ import java.util.*;
  * 三种房间类型的一种，父类为Room
  */
 public class MiddleRoom extends Room{
-    private static final int price = 300;
 
     MiddleRoom(String _room_id){
         this.roomType = "MIDDLE";

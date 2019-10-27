@@ -6,7 +6,6 @@ import java.util.*;
  */
 
 public class LargeRoom extends Room{
-    private static final int price = 300;
 
     LargeRoom(String _room_id){
         this.roomType = "LARGE";
