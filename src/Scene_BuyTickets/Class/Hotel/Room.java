@@ -1,6 +1,9 @@
 package Scene_BuyTickets.Class.Hotel;
 import java.util.*;
 
+/*
+ * 抽象类 描述宾馆中的房间
+ */
 public abstract class Room {
     protected String roomID;
     protected String roomType;

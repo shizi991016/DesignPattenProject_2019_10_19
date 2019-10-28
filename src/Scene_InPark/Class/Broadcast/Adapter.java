@@ -7,32 +7,34 @@ import java.util.Scanner;
 public class Adapter {
 
     //要切换成的语言,默认为中文
-    private int language = 1;
-    //选择需要的语言翻译
-    public Adapter() {
-        System.out.print("请选择您需要切换的语言：1、中文，2、英文，3、德文");
-
-        Scanner sc = new Scanner(System.in);
-        language = sc.nextInt();
-
-    }
+    private String language = "A";
 
     //将原本的闭园语音转换为切换后的语音
     public String translate() {
 
-        String message = "广播：游园即将关闭，请各位游客尽快出园.";
+        //通知使用者切换语言
+        System.out.print("Adapter:Adapter:请选择您需要切换的语言：A、取消切换，默认中文，B、English，C、Deutsch\n" + //中文
+                "Please select the language you need to switch：A、取消切换，默认中文，B、English，C、Deutsch\n" +//英文
+                "Bitte wählen Sie die gewünschte Sprache aus：A、D、取消切换，默认中文，B、English，C、Deutsch");//德文
 
-        if (language == 1) {
-            message = "广播：游园即将关闭，请各位游客尽快出园.";
+        Scanner sc = new Scanner(System.in);
+        language = sc.next();
+
+        //选择需要的语言翻译
+        String message = null;
+
+        if (language.equals("A")) {
+            message = Chinese.Chinese();//调用Chinese类的方法将语音设置为中文
         }
-        else if (language == 2) {
-            message = "Broadcast：The park will be closed soon. Please leave as soon as possible.";
+        else if (language.equals("B")) {
+            message = English.English();//调用English类的方法将语音设置成英语
         }
-        else if (language == 3) {
-            message = "Radio übertragen:Der Park wird bald geschlossen. Bitte gehen Sie so schnell wie möglich.";
+        else if (language.equals("C")) {
+            message = German.German();//调用German类的方法将语音设置为德语
         }
         else {
-            System.out.println("Adapter:translate:数字输入错误，请重新输入");
+            System.out.println("Adapter:translate:字母输入错误，请重新输入");
+            translate();
         }
         //返回切换好的语音
         return message;

@@ -1,5 +1,8 @@
 package Scene_BuyTickets.Class.Hotel;
 
+/*
+ * 房间生产工厂 由Hotel类中的addNewRoom函数调用
+ */
 public class RoomFactory {
     public Room createRoom(String _roomType,String _room_id){
         if(_roomType == null){

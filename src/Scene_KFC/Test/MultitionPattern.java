@@ -1,6 +1,6 @@
 package Scene_KFC.Test;
 import Scene_KFC.Class.Tourist;
-public class MultitionTest {
+public class MultitionPattern {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

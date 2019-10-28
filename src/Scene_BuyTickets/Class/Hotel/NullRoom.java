@@ -1,5 +1,8 @@
 package Scene_BuyTickets.Class.Hotel;
 
+/*
+ * 空对象，父类为Room
+ */
 public class NullRoom extends Room{
 
     @Override

@@ -1,19 +1,17 @@
-package product;
+package Scene_KFC.Class.product;
 
 /*
- *可乐类继承自冷饮类，实现了弱不变模式
+ *可乐类继承自冷饮类，实现了桥接模式
  */
 
 
-import type.Meat_food;
-import type.Veg_food;
-import type.Meat_or_veg;
+import Scene_KFC.Class.type.Meat_or_veg;
+
 
 public class Coke extends ColdDrink {
 
-    private float price;    //可乐的价格，属性私有满足不变模式
-    private float volume;   //可乐的容量，属性私有满足不变模式
-    private Meat_or_veg am;//桥接模式分类成员
+    private float price;
+    private float volume;
     public Coke(){
         this.price=7.0f;
         this.volume=300.0f;
@@ -34,7 +32,5 @@ public class Coke extends ColdDrink {
         return "Coke";
     }
 
-    public void setPrice(){
-        //对象没有任何方法修改对象的状态，满足不变模式
-    }
+
 }

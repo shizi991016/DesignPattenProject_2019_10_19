@@ -1,4 +1,4 @@
-package meal;
+package Scene_KFC.Class.meal;
 /*
 *套餐的抽象装饰类
  */

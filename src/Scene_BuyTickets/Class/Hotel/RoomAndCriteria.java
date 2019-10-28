@@ -2,6 +2,9 @@ package Scene_BuyTickets.Class.Hotel;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * 过滤器模式中的和运算
+ */
 public class RoomAndCriteria implements RoomCriteria{
     private RoomCriteria criteria;
     private RoomCriteria otherCriteria;

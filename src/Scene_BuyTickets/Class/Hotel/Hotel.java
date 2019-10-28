@@ -1,11 +1,17 @@
 package Scene_BuyTickets.Class.Hotel;
 import java.util.*;
 
+/*
+ * 宾馆类
+ * 相当于MVC模式下的控制器，所有与数据和视图相关的操作都封装在此类中
+ */
 public class Hotel {
     // 创建唯一的Hotel对象
     private static Hotel hotel = new Hotel();
     // 房间列表
     private static List<Room> roomList = new ArrayList<Room>();
+    // 前端控制器中的调度器
+    private static HotelViewDispatcher dispatcher = new HotelViewDispatcher();
 
     // 房间生产工厂
     private static RoomFactory roomFactory = new RoomFactory();
@@ -35,6 +41,10 @@ public class Hotel {
     // 获取唯一可用对象
     public static Hotel getInstance(){
         return hotel;
+    }
+
+    public void dispatchRequest(String request){
+        dispatcher.dispatch(request);
     }
 
     // 打印所有房间信息
@@ -114,7 +124,7 @@ public class Hotel {
             return;
         }
         for(int i=0;i<roomList.size();i++){
-            if(roomList.get(i).getRoomID().equals(_room_id)){
+            if(roomList.get(i).getRoomID().equals(_room_id)&&roomList.get(i).getRoomState().printState().equals("空闲")){
                 roomList.get(i).lineIn(_tourist_number,_tourist_name,_tourist_id);
                 System.out.print("入住成功，入住后的"+_room_id+"房间信息为:");
                 roomList.get(i).printAllInfo();
@@ -149,7 +159,7 @@ public class Hotel {
     // 更改某一房间状态信息
     public void changeRoomState(String _room_id,RoomState _room_state){
         for(int i=0;i<roomList.size();i++){
-            if(roomList.get(i).getRoomID().equals(_room_id)){
+            if(roomList.get(i).getRoomID().equals(_room_id)&&roomList.get(i).getTouristNumber()==0){
                 roomList.get(i).setRoomState(_room_state);
                 System.out.print("更改成功，更改后的"+_room_id+"房间信息为:");
                 roomList.get(i).printAllInfo();
