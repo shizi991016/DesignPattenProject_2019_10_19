@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class FlyweightPatternTest {
 
-    public static void main(String[] args){
+    public static void flyweightPatternTest(){
         DreamIsland dis=DreamIsland.getInstance();
         DreamIsland.init();
         //新建区域

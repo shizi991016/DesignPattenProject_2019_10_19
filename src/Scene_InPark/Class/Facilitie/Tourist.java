@@ -55,7 +55,11 @@ public class Tourist {
 		}
 	}
 
-	public void Visit(Facilitie fc){
-		fc.TouristFlow++;
+	public void Visit(Facilitie fc) {
+		Facilitie current = fc;
+		while(current!= null) {
+			current.TouristFlow++;
+			current=current.parent;
+		}
 	}
 }

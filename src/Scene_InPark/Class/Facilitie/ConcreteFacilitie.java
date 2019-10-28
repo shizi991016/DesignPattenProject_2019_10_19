@@ -14,6 +14,11 @@ public class ConcreteFacilitie extends Facilitie{
 	}
 
 	@Override
+	public String printFlow(){
+		return this.name+":"+this.returnFlow();
+	}
+
+	@Override
 	public void accept(Tourist tourist){
 		this.accept(tourist);
 	}
