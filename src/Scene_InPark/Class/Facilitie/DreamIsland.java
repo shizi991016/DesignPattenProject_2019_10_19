@@ -8,11 +8,13 @@ public class DreamIsland {
 	private Hashtable<String, Facilitie> pool=new Hashtable();
 	//私有化构造函数，防止外部创建对象
 	private DreamIsland() {}
+	//判断对象是否已经初始化的标志
+	private boolean initFlag=false;
 	//将整个梦幻岛作为享元工厂，这里使用了单例模式
 	public static DreamIsland getInstance()
 	{
 		//返回单例
-		System.out.println("DreamIsland：getInstance:取得梦幻岛单例");
+//		System.out.println("DreamIsland：getInstance:取得梦幻岛单例");
 		return singleton;
 	}
 	//将所有设施及其名字作为享元
@@ -53,34 +55,37 @@ public class DreamIsland {
 
 	public static void init()
 	{
-		System.out.println("============开始初始化设施===========");
+
 		DreamIsland dis=DreamIsland.getInstance();
+		if (dis.initFlag == false) {
+			System.out.println("============开始初始化设施===========");
+			Facilitie root = dis.getFacilitie("DreamIsland", 2);
 
-		Facilitie root = dis.getFacilitie("DreamIsland",2);
+			Facilitie areaA = dis.getFacilitie("A", 2);
+			Facilitie areaB = dis.getFacilitie("B", 2);
+			Facilitie areaC = dis.getFacilitie("C", 2);
+			Facilitie areaD = dis.getFacilitie("D", 2);
 
-		Facilitie areaA = dis.getFacilitie("A",2);
-		Facilitie areaB = dis.getFacilitie("B",2);
-		Facilitie areaC = dis.getFacilitie("C",2);
-		Facilitie areaD = dis.getFacilitie("D",2);
+			Facilitie rollerCoaster = dis.getFacilitie("rollerCoaster", 1);
+			Facilitie ferrisWheel = dis.getFacilitie("ferrisWheel", 1);
+			Facilitie KFC = dis.getFacilitie("kfc", 1);
+			Facilitie merryGoAround = dis.getFacilitie("merryGoAround", 1);
+			Facilitie aquarium = dis.getFacilitie("aquarium", 1);
 
-		Facilitie rollerCoaster = dis.getFacilitie("rollerCoaster",1);
-		Facilitie ferrisWheel = dis.getFacilitie("ferrisWheel",1);
-		Facilitie KFC = dis.getFacilitie("kfc",1);
-		Facilitie merryGoAround = dis.getFacilitie("merryGoAround",1);
-		Facilitie aquarium = dis.getFacilitie("aquarium",1);
+			root.addChild(areaA);
+			root.addChild(areaB);
+			root.addChild(areaC);
+			root.addChild(areaD);
+			areaA.addChild(ferrisWheel);
+			areaA.addChild(merryGoAround);
+			areaA.addChild(aquarium);
+			areaB.addChild(rollerCoaster);
+			areaC.addChild(KFC);
 
-		root.addChild(areaA);
-		root.addChild(areaB);
-		root.addChild(areaC);
-		root.addChild(areaD);
-		areaA.addChild(ferrisWheel);
-		areaA.addChild(merryGoAround);
-		areaA.addChild(aquarium);
-		areaB.addChild(rollerCoaster);
-		areaC.addChild(KFC);
-
-		System.out.println("============设施初始化完成===========");
-		System.out.println("当前游乐园设施结构为：");
-		System.out.println(root.printAll());
+			System.out.println("============设施初始化完成===========");
+			System.out.println("当前游乐园设施结构为：");
+			System.out.println(root.printAll());
+			dis.initFlag=true;
+		}
 	}
 }

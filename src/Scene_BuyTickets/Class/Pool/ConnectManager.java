@@ -30,24 +30,24 @@ public class ConnectManager {
     }
 
     //建立连接
-    public void Connect(){
+    public void connect(){
         if (pool.get(connection))
         {
             System.out.println("ConnectManager创建连接中...");
-            listener.Listen();
-            dataStack.CreateDataStack();
+            listener.listen();
+            dataStack.createDataStack();
             System.out.println("ConnectManager连接创建成功");
         }
     }
 
     //断开连接
-    public void Disconnect(){
+    public void disconnect(){
         if (listener != null)
         {
             System.out.println("ConnectManager注销连接中...");
             pool.release(this.connection);
-            listener.DestroyListener();
-            dataStack.DestroyDataStack();
+            listener.destroyListener();
+            dataStack.destroyDataStack();
             System.out.println("ConnectManager连接注销成功");
         }
     }

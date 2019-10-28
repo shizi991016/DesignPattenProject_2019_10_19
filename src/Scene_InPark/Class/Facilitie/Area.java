@@ -25,6 +25,17 @@ public class Area extends Facilitie{
 	    return contains.toString();
     }
 
+	@Override
+	public String printFlow(){
+		StringBuilder contains=new StringBuilder(this.name);
+		contains.append(":"+this.returnFlow());
+		for(Facilitie fc:this.mFacilities){
+			contains.append("\n");
+			contains.append(fc.printFlow());
+		}
+		return contains.toString();
+	}
+
     @Override
     public boolean addChild(Facilitie fc){
 	    fc.parent=this;

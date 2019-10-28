@@ -6,7 +6,7 @@ import Scene_InPark.Class.Facilitie.Facilitie;
 import java.util.Scanner;
 
 public class AbstractFactoryPatternTest {
-    public static void main(String[] args){
+    public static void abstractFactoryPatternTest(){
         DreamIsland dis=DreamIsland.getInstance();
         DreamIsland.init();
 

@@ -46,4 +46,7 @@ public abstract class Facilitie {
 	//visitor模式的核心方法，接收visitor的访问
 	public abstract void accept(Tourist tourist);
 	public int returnFlow(){return TouristFlow;}
+
+	//打所有设施和区域的客流量
+	public abstract String printFlow();
 }
