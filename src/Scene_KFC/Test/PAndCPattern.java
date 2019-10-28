@@ -1,6 +1,6 @@
 
-package Test;
-import Class.ProducerAndComcumer.*;
+package Scene_KFC.Test;
+import Scene_KFC.Class.ProducerAndComcumer.*;
 public class PAndCPattern {
     public static void main (String[] args)
     {

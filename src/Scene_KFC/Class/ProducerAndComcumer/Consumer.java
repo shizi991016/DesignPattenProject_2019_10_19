@@ -1,4 +1,4 @@
-package Class.ProducerAndComcumer;
+package Scene_KFC.Class.ProducerAndComcumer;
 //消费者
 public class Consumer extends Thread {
     private int num;//消费的数量

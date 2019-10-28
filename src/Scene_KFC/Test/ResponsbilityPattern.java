@@ -1,10 +1,10 @@
-package Test;
+package Scene_KFC.Test;
 
 
-import Class.handler.DirectorHandler;
-import Class.handler.Handler;
-import Class.handler.ManagerHandler;
-import Class.handler.WaiterHandler;
+import Scene_KFC.Class.handler.DirectorHandler;
+import Scene_KFC.Class.handler.Handler;
+import Scene_KFC.Class.handler.ManagerHandler;
+import Scene_KFC.Class.handler.WaiterHandler;
 
 public class ResponsbilityPattern {
     public static void main(String[] args)

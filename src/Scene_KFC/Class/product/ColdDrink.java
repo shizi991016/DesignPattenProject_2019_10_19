@@ -1,7 +1,7 @@
-package Class.product;
+package Scene_KFC.Class.product;
 
-import Class.pack.Bottle;
-import Class.pack.Packing;
+import Scene_KFC.Class.pack.Bottle;
+import Scene_KFC.Class.pack.Packing;
 /*
  *冷饮抽象类，对食物和冷饮接口的实现
  */

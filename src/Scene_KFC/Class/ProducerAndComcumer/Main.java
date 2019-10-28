@@ -1,5 +1,5 @@
 
-package Class.ProducerAndComcumer;
+package Scene_KFC.Class.ProducerAndComcumer;
 public class Main {
     public static void main (String[] args)
     {

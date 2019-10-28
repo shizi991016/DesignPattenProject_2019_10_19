@@ -1,4 +1,4 @@
-package Class.meal;
+package Scene_KFC.Class.meal;
 /*
  *套餐的抽象建造者类，定义了一系列抽象方法
  * 其中buildAPart1-3为建造A套餐所需的步骤

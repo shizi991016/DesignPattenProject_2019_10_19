@@ -1,4 +1,4 @@
-package Class.handler;
+package Scene_KFC.Class.handler;
 
 public class WaiterHandler extends Handler  {
     @Override

@@ -1,7 +1,7 @@
-package Test;
+package Scene_KFC.Test;
 
-import Class.product.*;
-import Class.type.*;
+import Scene_KFC.Class.product.*;
+import Scene_KFC.Class.type.*;
 
 public class PrototypePattern {
     public static void main(String[] args) {

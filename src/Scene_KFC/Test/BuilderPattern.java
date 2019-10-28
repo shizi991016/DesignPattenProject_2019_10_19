@@ -1,7 +1,7 @@
-package Test;
+package Scene_KFC.Test;
 
 
-import Class.meal.*;
+import Scene_KFC.Class.meal.*;
 
 public class BuilderPattern {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
-package Test;
+package Scene_KFC.Test;
 
-import Class.pack.Packing;
-import Class.product.BigMac;
+import Scene_KFC.Class.pack.Packing;
+import Scene_KFC.Class.product.BigMac;
 
 import java.lang.reflect.Parameter;
 

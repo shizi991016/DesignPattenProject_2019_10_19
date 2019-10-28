@@ -1,4 +1,4 @@
-package Class.pack;
+package Scene_KFC.Class.pack;
 
 public abstract class Packing {
     public abstract String pack();

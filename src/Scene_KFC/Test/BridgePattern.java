@@ -1,11 +1,11 @@
-package Test;
+package Scene_KFC.Test;
 
-import Class.product.BigMac;
-import Class.product.ChickenBurger;
-import Class.product.Chips;
-import Class.product.Coke;
-import Class.product.*;
-import Class.type.*;
+import Scene_KFC.Class.product.BigMac;
+import Scene_KFC.Class.product.ChickenBurger;
+import Scene_KFC.Class.product.Chips;
+import Scene_KFC.Class.product.Coke;
+import Scene_KFC.Class.product.*;
+import Scene_KFC.Class.type.*;
 
 public class BridgePattern {
     public static void main(String[] args) {

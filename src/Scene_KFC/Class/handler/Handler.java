@@ -1,4 +1,4 @@
-package Class.handler;
+package Scene_KFC.Class.handler;
 
 public abstract class Handler {
     private Handler nextHandler; //下一个处理者

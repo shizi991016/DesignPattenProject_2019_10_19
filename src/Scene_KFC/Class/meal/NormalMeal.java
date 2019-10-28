@@ -1,10 +1,10 @@
-package Class.meal;
+package Scene_KFC.Class.meal;
 
 /*
 *普通套餐类，其中添加product包中的Item
  */
 
-import Class.product.Item;
+import Scene_KFC.Class.product.Item;
 
 import java.util.ArrayList;
 import java.util.List;

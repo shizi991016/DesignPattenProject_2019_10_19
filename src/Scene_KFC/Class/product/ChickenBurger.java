@@ -1,4 +1,4 @@
-package Class.product;
+package Scene_KFC.Class.product;
 
 /*
  *鸡肉堡类继承自食物类
@@ -7,8 +7,8 @@ package Class.product;
  */
 
 
-import Class.type.Meat_food;
-import Class.type.Meat_or_veg;
+import Scene_KFC.Class.type.Meat_food;
+import Scene_KFC.Class.type.Meat_or_veg;
 
 
 

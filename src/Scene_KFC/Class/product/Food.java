@@ -1,8 +1,8 @@
-package Class.product;
+package Scene_KFC.Class.product;
 
-import Class.type.Meat_or_veg;
-import Class.pack.Packing;
-import Class.pack.Wrapper;
+import Scene_KFC.Class.type.Meat_or_veg;
+import Scene_KFC.Class.pack.Packing;
+import Scene_KFC.Class.pack.Wrapper;
 
 public abstract class Food implements Item{
 

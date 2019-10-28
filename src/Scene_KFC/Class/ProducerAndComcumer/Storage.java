@@ -1,4 +1,4 @@
-package Class.ProducerAndComcumer;
+package Scene_KFC.Class.ProducerAndComcumer;
 import java.util.LinkedList;
 import java.util.List;
 

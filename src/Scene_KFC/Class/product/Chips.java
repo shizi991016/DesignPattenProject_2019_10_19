@@ -1,12 +1,12 @@
-package Class.product;
+package Scene_KFC.Class.product;
 
 /*
  *薯条类继承自食物类，实现了桥接模式
  */
 
 
-import Class.type.Meat_or_veg;
-import Class.type.Veg_food;
+import Scene_KFC.Class.type.Meat_or_veg;
+import Scene_KFC.Class.type.Veg_food;
 
 
 public class Chips extends Food {

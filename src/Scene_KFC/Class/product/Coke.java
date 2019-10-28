@@ -1,11 +1,11 @@
-package Class.product;
+package Scene_KFC.Class.product;
 
 /*
  *可乐类继承自冷饮类，实现了桥接模式
  */
 
 
-import Class.type.Meat_or_veg;
+import Scene_KFC.Class.type.Meat_or_veg;
 
 
 public class Coke extends ColdDrink {

@@ -1,4 +1,4 @@
-package Class.pack;
+package Scene_KFC.Class.pack;
 
 /*
  *瓶子类对包装接口的实现

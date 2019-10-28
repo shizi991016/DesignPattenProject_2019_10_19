@@ -1,11 +1,11 @@
-package Class.product;
+package Scene_KFC.Class.product;
 /*
 *巨无霸类继承自食物类，实现了桥接模式
  */
 
 
-import Class.type.Meat_food;
-import Class.type.Meat_or_veg;
+import Scene_KFC.Class.type.Meat_food;
+import Scene_KFC.Class.type.Meat_or_veg;
 
 public class BigMac extends Food {
 
