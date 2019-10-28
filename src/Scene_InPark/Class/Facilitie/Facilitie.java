@@ -25,7 +25,7 @@ public abstract class Facilitie {
 		StringBuilder directory = new StringBuilder();
 		directory.append(this.name);
 		while(current.parent!=null){
-			directory.insert(0,"/");
+			directory.insert(0,"-->");
 			directory.insert(0,current.parent.name);
 			current = current.parent;
 		}
