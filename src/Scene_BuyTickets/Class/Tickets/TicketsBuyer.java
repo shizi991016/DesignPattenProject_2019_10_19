@@ -16,19 +16,19 @@ public class TicketsBuyer extends Tickets {
 
 	//模拟登录
 	@Override
-	public void Validate() {
+	public void validate() {
 		System.out.println("用户 " + name + " 登陆成功");
 	}
 
 	//模拟选择门票类型
 	@Override
-	public void Select(String type) {
+	public void select(String type) {
 		System.out.println("用户 " + name + " 选择" + type);
 	}
 
 	//模拟支付
 	@Override
-	public void Pay() {
+	public void pay() {
 		System.out.println("用户 " + name + " 支付成功");
 	}
 
