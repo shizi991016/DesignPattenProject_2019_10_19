@@ -3,6 +3,7 @@ package Scene_InPark.Class.Broadcast;
 import java.util.ArrayList;
 import Scene_InPark.Class.Facilitie.Tourist;
 
+//广播类，接收游客寻人寻物委托（中介者模式），广播闭园通知（观察者模式），切换闭园语言（适配器模式）
 public class Broadcast {
 
     //使用ArrayList存放接收广播的游客名单
@@ -20,22 +21,24 @@ public class Broadcast {
     //将游园置为state，并判断是否需要通知游客闭园
     public void changeGardenState (boolean state){
 
-        gardenState = state;//将游园状态改变为参数state
+        //将游园状态改变为参数state
+        gardenState = state;
 
         //判断是否游园即将关闭，关闭则通知所有在名单中的游客
         if (!gardenState){
-            System.out.println("Broadcast:changeGardenState:游园状态置为闭园");
+            System.out.println("游园状态改变置为闭园");
             notifyAllTourists();
         }
         else{
-            System.out.println("Broadcast:changeGardenState:游园并未置为关闭状态，仍为开放中");
+            System.out.println("游园并未改变，仍为开放中");
         }
     }
 
     //使用适配器切换语言后，将游园置为state，并判断是否需要通知游客闭园
     public void changeGardenState (boolean state, Adapter adapter){
 
-        gardenState = state;//将游园状态改变为参数state
+        //将游园状态改变为参数state
+        gardenState = state;
 
         //判断是否游园即将关闭，关闭则通知所有在名单中的游客
         if (!gardenState){
@@ -43,21 +46,21 @@ public class Broadcast {
             //使用适配器切换语言
             String message = adapter.translate();
 
-            System.out.println("Broadcast:changeGardenState:游园状态置为闭园");
+            System.out.println("游园状态置为闭园");
 
             //使用切换后的语言通知所有游客
             notifyAllTourists(message);
 
         }
         else{
-            System.out.println("Broadcast:changeGardenState:游园并未置为关闭状态，仍为开放中");
+            System.out.println("游园并未改变，仍为开放中");
         }
     }
 
     //通知所有在名单中的游客游园即将关闭
     private void notifyAllTourists(){
 
-        System.out.println("Broadcast:notifyAllTourists:广播：游园即将关闭，请各位游客尽快出园");
+        System.out.println("广播：游园即将关闭，请各位游客尽快出园");
 
         for (int i = 0; i < noticeList.size(); i++) {
             noticeList.get(i).changeBehavior();
@@ -72,7 +75,7 @@ public class Broadcast {
     //通知所有游客寻人寻物
     private void notifyAllTourists(String lostName, Tourist seeker, String seekerName) {
 
-        System.out.println("Broadcast:notifyAllTourists:广播：游客" + seekerName + "正在寻找" + lostName);
+        System.out.println("广播：游客" + seekerName + "正在寻找" + lostName);
 
         for (int i = 0; i < noticeList.size(); i++) {
             noticeList.get(i).receiveSearchInformation(lostName, seeker);
@@ -82,7 +85,7 @@ public class Broadcast {
     //使用切换后的广播语言通知所有游客
     private void notifyAllTourists(String message){
 
-        System.out.println("Broadcast:changeGardenState:" + message);
+        System.out.println(message);
 
         for (int i = 0; i < noticeList.size(); i++) {
             noticeList.get(i).changeBehavior();
