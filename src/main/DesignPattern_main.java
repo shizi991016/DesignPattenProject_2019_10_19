@@ -2,6 +2,7 @@ package main;
 
 import Scene_BuyTickets.Test.*;
 import Scene_InPark.Test.*;
+import Scene_KFC.Test.BuilderPatternTest;
 
 public class DesignPattern_main {
 	public static void main(String[] args) {
@@ -20,6 +21,7 @@ public class DesignPattern_main {
 		ProxyPatternTest.proxyPatternTest();
 		//FacadePatternTest facadePatternTest = new FacadePatternTest();
 		FacadePatternTest.facadePatternTest();
+
 
 //		// 模式一 前端控制器
 //		FrontControllerTest test1 = new FrontControllerTest();
