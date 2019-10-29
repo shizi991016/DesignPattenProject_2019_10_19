@@ -25,7 +25,7 @@ public abstract class Facilitie {
 		StringBuilder directory = new StringBuilder();
 		directory.append(this.name);
 		while(current.parent!=null){
-			directory.insert(0,"/");
+			directory.insert(0,"-->");
 			directory.insert(0,current.parent.name);
 			current = current.parent;
 		}
@@ -46,4 +46,7 @@ public abstract class Facilitie {
 	//visitor模式的核心方法，接收visitor的访问
 	public abstract void accept(Tourist tourist);
 	public int returnFlow(){return TouristFlow;}
+
+	//打所有设施和区域的客流量
+	public abstract String printFlow();
 }
