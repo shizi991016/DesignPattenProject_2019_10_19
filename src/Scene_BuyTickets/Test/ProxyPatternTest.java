@@ -7,12 +7,6 @@ public class ProxyPatternTest {
         System.out.println("\n" +"----------------------------------------");
         System.out.println("6. 代理模式(ProxyPattern):");
         System.out.println("\n测试一:");
-        System.out.println("某某方法测试");
-        System.out.println("吧啦吧啦吧啦吧啦吧啦吧啦");
-        System.out.println("\n测试二:");
-        System.out.println("另某某方法测试");
-        System.out.println("吧啦吧啦吧啦吧啦吧啦吧啦");
-        System.out.println("\n测试三:");
         System.out.println("代理函数测试");
         TicketsBuyer ticketsBuyer = new TicketsBuyer("小王");
         CtripProxy ctripProxy = new CtripProxy(ticketsBuyer);

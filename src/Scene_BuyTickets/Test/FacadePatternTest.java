@@ -7,12 +7,6 @@ public class FacadePatternTest {
         System.out.println("\n" +"----------------------------------------");
         System.out.println("8. 门面模式(FacadePattern):");
         System.out.println("\n测试一:");
-        System.out.println("某某方法测试");
-        System.out.println("吧啦吧啦吧啦吧啦吧啦吧啦");
-        System.out.println("\n测试二:");
-        System.out.println("另某某方法测试");
-        System.out.println("吧啦吧啦吧啦吧啦吧啦吧啦");
-        System.out.println("\n测试三:");
         System.out.println("连接门面函数测试");
         Pool pool = new Pool();
         String userName = "小王";
