@@ -9,11 +9,11 @@ public class StatePatternTest {
         System.out.println("****************************************************************************");
         System.out.println("模式五 状态模式(State Pattern)：");
         System.out.println("相关类：Hotel Room RoomState RoomEmptyState RoomInState RoomDecorationState");
-        System.out.println("模式四 测试一 控制器Hotel调用changeRoomState函数更改房间状态信息RoomEmptyState->RoomDecorationState");
+        System.out.println("模式五 测试一 控制器Hotel调用changeRoomState函数更改房间状态信息RoomEmptyState->RoomDecorationState");
         Hotel hotel = Hotel.getInstance();
         RoomState room_state = new RoomDecorationState();
         hotel.changeRoomState("102",room_state);
-        System.out.println("模式四 测试二 不同状态会对应不同效果 如处于RoomDecorationState或RoomInState的房间不能入住 处于RoomEmptyState的房间则可以入住");
+        System.out.println("模式五 测试二 不同状态会对应不同效果 如处于RoomDecorationState或RoomInState的房间不能入住 处于RoomEmptyState的房间则可以入住");
         List<String> tourist_name = new ArrayList<String>();
         List<String> tourist_id = new ArrayList<String>();
         tourist_name.add("张三");
