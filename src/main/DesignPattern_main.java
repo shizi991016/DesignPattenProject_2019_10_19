@@ -18,9 +18,9 @@ public class DesignPattern_main {
 		//FacadePatternTest facadePatternTest = new FacadePatternTest();
 		//FacadePatternTest.FacadePatternTest();
 
-		ProxyPatternTest.proxyPatternTest();
+		//ProxyPatternTest.proxyPatternTest();
 		//FacadePatternTest facadePatternTest = new FacadePatternTest();
-		FacadePatternTest.facadePatternTest();
+		//FacadePatternTest.facadePatternTest();
 
 
 //		// 模式一 前端控制器
