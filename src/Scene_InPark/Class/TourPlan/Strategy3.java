@@ -1,11 +1,24 @@
 package Scene_InPark.Class.TourPlan;
 
-import Scene_InPark.Class.TourPlan.StrategyForAfternoonPlan;
+public class Strategy3 extends Strategy {
+    //构造函数;
+    Strategy3(String name, String des1, String des2, String des3){
+        this.name = name;
+        this.des1 = des1;
+        this.des2 = des2;
+        this.des3 = des3;
+        this.advantage = "花钱少";
+    }
 
-public class Strategy3 extends StrategyForAfternoonPlan {
-    //重写父类RealizePlayPlan中的carryOut()方法
+    //重写父类方法，打印具体优势
     @Override
-    protected void carryOut() {
-        System.out.print(myStrategies.getStrategy(2).getStrategy() + "  ");
+    public void showAdvantage() {
+        System.out.println("花钱少");
+    }
+
+    //重写父类方法，返回字符串类型的具体优势
+    @Override
+    public String getAdvantage() {
+        return "花钱少";
     }
 }
