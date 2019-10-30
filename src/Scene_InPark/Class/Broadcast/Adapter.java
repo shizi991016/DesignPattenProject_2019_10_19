@@ -23,13 +23,13 @@ public class Adapter {
         String message = null;
 
         if (language.equals("A")) {
-            message = Chinese.Chinese();//调用Chinese类的方法将语音设置为中文
+            message = Chinese.chinese();//调用Chinese类的方法将语音设置为中文
         }
         else if (language.equals("B")) {
-            message = English.English();//调用English类的方法将语音设置成英语
+            message = English.english();//调用English类的方法将语音设置成英语
         }
         else if (language.equals("C")) {
-            message = German.German();//调用German类的方法将语音设置为德语
+            message = German.german();//调用German类的方法将语音设置为德语
         }
         else {
             System.out.println("字母输入错误，请重新输入");
