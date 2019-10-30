@@ -26,7 +26,7 @@ public class CommandPatternTest {
     }
 
     //用于测试的静态函数
-    public static void commandPatternTest(String[] args) {
+    public static void commandPatternTest() {
         System.out.println("\n" +"----------------------------------------");
         System.out.println("21.命令模式(Command Pattern):");
 
@@ -78,7 +78,6 @@ public class CommandPatternTest {
             flag = sc.nextInt();
         }
         
-        sc.close();
         System.out.println("----------------------------------------" + "\n");
     }
 }
