@@ -27,9 +27,10 @@ public class CommandPatternTest {
 
     //用于测试的静态函数
     public static void commandPatternTest(String[] args) {
-        System.out.println("\n" +"classname: (objectid) : method name :action desc");
-        System.out.println("----------------------------------------");
+        System.out.println("\n" +"----------------------------------------");
+        System.out.println("21.命令模式(Command Pattern):");
 
+        System.out.println("\n"+"测试一:");
         //获得花车游行类实例
         FloatParade floatParade = FloatParade.getInstance();
         //初始化部分命令
@@ -45,6 +46,7 @@ public class CommandPatternTest {
             printName(floatParade);
         }
 
+        System.out.println("\n"+"测试二:");
         //根据输入执行命令，执行结果会产生相应备忘录
         Scanner sc = new Scanner(System.in);
         System.out.print("[提示]1:翻转  2:随机  3:初始  4:undo  5:redo  0:退出 : ");
@@ -77,6 +79,6 @@ public class CommandPatternTest {
         }
         
         sc.close();
-        System.out.println("----------------------------------------");
+        System.out.println("----------------------------------------" + "\n");
     }
 }

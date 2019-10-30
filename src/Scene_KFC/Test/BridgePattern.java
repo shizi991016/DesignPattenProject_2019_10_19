@@ -8,19 +8,27 @@ import Scene_KFC.Class.product.*;
 import Scene_KFC.Class.type.*;
 
 public class BridgePattern {
-    public static void main(String[] args) {
+    public static void bridgePattern(String[] args) {
+        System.out.println("\n" +"----------------------------------------");
+        System.out.println("25.桥接模式(BridgePattern)：");
+        System.out.println("\n"+"测试一：");
+
+
         BigMac bigmac=new BigMac();
         System.out.println("BigMac  ");
+        bigmac.am.meat_or_veg_classify();
+
         ChickenBurger chick=new ChickenBurger();
         System.out.println("ChickenBurger  ");
+        chick.am.meat_or_veg_classify();
+
         Chips chips=new Chips();
         System.out.println("Chips  ");
-        Coke coke=new Coke();
-        System.out.println("Coke  ");
-
-        bigmac.am.meat_or_veg_classify();
-        chick.am.meat_or_veg_classify();
         chips.am.meat_or_veg_classify();
+
+        System.out.println("\n" +"----------------------------------------");
+
+
 
 
 

@@ -1,7 +1,8 @@
 package Scene_InPark.Test;
 
-import Scene_InPark.Class.Interpret.*;
-import java.util.HashMap;
+import Scene_InPark.Class.Interpret.Answer;
+import Scene_InPark.Class.Interpret.Ask;
+
 import java.util.Scanner;
 
 /**
@@ -11,9 +12,10 @@ import java.util.Scanner;
  */
 public class InterpretPatternTest {
     public static void interpretPatternTest() {
-        System.out.println("\n" +"classname: (objectid) : method name :action desc");
-        System.out.println("----------------------------------------");
+        System.out.println("\n" +"----------------------------------------");
+        System.out.println("20.解释器模式(Interpret Pattern):");
 
+        System.out.println("\n"+"测试一:");
         //设定几个默认问题
         String[] problems = {"A-01", "B-02", "C-03", "D-04"};
         //构建解释器环境类
@@ -29,6 +31,7 @@ public class InterpretPatternTest {
             }
         }
 
+        System.out.println("\n"+"测试二:");
         //根据输入进行解释
         System.out.println("");
         Scanner sc = new Scanner(System.in);
