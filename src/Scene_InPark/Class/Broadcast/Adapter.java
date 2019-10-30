@@ -1,8 +1,9 @@
 package Scene_InPark.Class.Broadcast;
 
+//该适配器更改广播播放闭园语言
+
 import java.util.Scanner;
 
-//该适配器更改广播播放闭园语言
 public class Adapter {
 
     //要切换成的语言,默认为中文
@@ -12,7 +13,7 @@ public class Adapter {
     public String translate() {
 
         //通知使用者切换语言
-        System.out.print("请选择您需要切换的语言：A、取消切换，默认中文，B、English，C、Deutsch\n" + //中文
+        System.out.print("Adapter:Adapter:请选择您需要切换的语言：A、取消切换，默认中文，B、English，C、Deutsch\n" + //中文
                 "Please select the language you need to switch：A、取消切换，默认中文，B、English，C、Deutsch\n" +//英文
                 "Bitte wählen Sie die gewünschte Sprache aus：A、D、取消切换，默认中文，B、English，C、Deutsch");//德文
 
@@ -32,7 +33,7 @@ public class Adapter {
             message = German.German();//调用German类的方法将语音设置为德语
         }
         else {
-            System.out.println("字母输入错误，请重新输入");
+            System.out.println("Adapter:translate:字母输入错误，请重新输入");
             translate();
         }
         //返回切换好的语音
