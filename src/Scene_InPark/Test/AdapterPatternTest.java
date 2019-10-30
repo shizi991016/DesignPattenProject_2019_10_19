@@ -19,6 +19,13 @@ public class AdapterPatternTest {
         broadcast.addList(tourist2);
         broadcast.addList(tourist3);
 
+        //方便测试
+        System.out.println("\n" +"----------------------------------------");
+        System.out.println("16.适配器模式(AdapterPattern)：");
+        System.out.println("\n"+"测试一：");
+
+
+        System.out.println("新建一个Adapter类，用来切换语言");
         //新建一个适配器，选择切换的语言
         Adapter adapter = new Adapter();
 
