@@ -11,11 +11,13 @@ public abstract class AbstractDecorator implements Meal{
         this.meal=meal;
     }
 
+    //展示套餐的内容
     @Override
     public void showItems(){
      meal.showItems();
     }
 
+    //获得套餐的价格
     @Override
     public float getCost(){
         return meal.getCost();

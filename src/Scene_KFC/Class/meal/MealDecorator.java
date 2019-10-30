@@ -5,6 +5,7 @@ package Scene_KFC.Class.meal;
  */
 public class MealDecorator extends AbstractDecorator {
     public MealDecorator(Meal meal) {
+
         //调用父类的构造方法
         super(meal);
     }
@@ -14,7 +15,6 @@ public class MealDecorator extends AbstractDecorator {
     }
 
     //增强了功能的showItems方法
-
     @Override
     public void showItems()
     {
