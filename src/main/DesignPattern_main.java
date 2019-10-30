@@ -3,6 +3,7 @@ package main;
 import Scene_BuyTickets.Test.*;
 import Scene_InPark.Test.*;
 import Scene_KFC.Test.BuilderPatternTest;
+import Scene_KFC.Test.MultitionPatternTest;
 
 public class DesignPattern_main {
 	public static void main(String[] args) {
@@ -21,7 +22,6 @@ public class DesignPattern_main {
 
 		// 模式八 门面模式
 		FacadePatternTest.facadePatternTest();
-
 	}
 
 }
