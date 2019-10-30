@@ -1,7 +1,8 @@
 package Scene_InPark.Test;
 
-import Scene_InPark.Class.Interpret.*;
-import java.util.HashMap;
+import Scene_InPark.Class.Interpret.Answer;
+import Scene_InPark.Class.Interpret.Ask;
+
 import java.util.Scanner;
 
 /**
