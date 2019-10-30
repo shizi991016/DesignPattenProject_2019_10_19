@@ -13,11 +13,14 @@ public class DecoratorPatternTest {
         director.constructMeal();;
         NormalMeal mealA=director.getMeal();
         Meal superMeal=new MealDecorator(mealA);
-        System.out.println("\n" +"classname: (objectid) : method name :action desc");
-        System.out.println("----------------------------------------");
+        System.out.println("\n" +"----------------------------------------");
+        System.out.println("30.装饰模式(Decorator)：");
+        System.out.println("\n测试一:");
+        System.out.println("创建超级套餐");
         System.out.println("super Meal");
         superMeal.showItems();
         System.out.println("Total Cost: " +superMeal.getCost());
+        System.out.println("创建超级套餐成功");
         System.out.println("----------------------------------------" + "\n");
 
 
