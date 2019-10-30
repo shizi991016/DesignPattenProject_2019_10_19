@@ -1,8 +1,8 @@
 
 package Scene_KFC.Test;
 import Scene_KFC.Class.ProducerAndComcumer.*;
-public class PAndCPattern {
-    public static void pandcPattern (String[] args)
+public class PAndCPatternTest {
+    public static void pandcPatternTest (String[] args)
     {
         System.out.println("\n" +"----------------------------------------");
         System.out.println("26.生产者消费者模式(Producer consumer Pattern)：");
