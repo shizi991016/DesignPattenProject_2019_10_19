@@ -4,6 +4,10 @@ import Scene_KFC.Class.ProducerAndComcumer.*;
 public class PAndCPattern {
     public static void main (String[] args)
     {
+        System.out.println("\n" +"----------------------------------------");
+        System.out.println("26.生产者消费者模式(Producer consumer Pattern)：");
+        System.out.println("\n"+"测试一：");
+
         Storage storage = new Storage();
         Producer p1 = new Producer(storage);
         Producer p2 = new Producer(storage);
@@ -30,5 +34,7 @@ public class PAndCPattern {
         p3.start();
         p4.start();
         p5.start();
+
+        System.out.println("\n" +"----------------------------------------");
     }
 }
