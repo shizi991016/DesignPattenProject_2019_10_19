@@ -32,7 +32,7 @@ public class DesignPattern_main {
 //		// 模式十三 访问者模式
 //		VisitorPatternTest.visitorPatternTest();
 //
-//     	// 模式十七 模板模式
+//		// 模式十七 模板模式
 //	  	TemplateMethodTest.templateMethodTest();
 //	  
 //		// 模式十八 策略模式
