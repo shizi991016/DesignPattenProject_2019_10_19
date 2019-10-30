@@ -8,7 +8,7 @@ import Scene_KFC.Class.product.*;
 import Scene_KFC.Class.type.*;
 
 public class BridgePattern {
-    public static void main(String[] args) {
+    public static void bridgePattern(String[] args) {
         System.out.println("\n" +"----------------------------------------");
         System.out.println("25.桥接模式(BridgePattern)：");
         System.out.println("\n"+"测试一：");
