@@ -5,6 +5,24 @@ import Scene_InPark.Test.*;
 
 public class DesignPattern_main {
 	public static void main(String[] args) {
+<<<<<<< HEAD
+		//proxyPatternTest proxyPatternTest = new proxyPatternTest();
+		ProxyPatternTest.proxyPatternTest();
+		//facadePatternTest facadePatternTest = new facadePatternTest();
+		FacadePatternTest.facadePatternTest();
+
+		//ProxyPatternTest proxyPatternTest = new ProxyPatternTest();
+
+		//ProxyPatternTest.ProxyPatternTest();
+		//FacadePatternTest facadePatternTest = new FacadePatternTest();
+		//FacadePatternTest.FacadePatternTest();
+
+		//ProxyPatternTest.proxyPatternTest();
+		//FacadePatternTest facadePatternTest = new FacadePatternTest();
+		//FacadePatternTest.facadePatternTest();
+
+
+=======
 //<<<<<<< HEAD
 		//proxyPatternTest proxyPatternTest = new proxyPatternTest();
 		ProxyPatternTest.proxyPatternTest();
@@ -21,6 +39,7 @@ public class DesignPattern_main {
 		//FacadePatternTest facadePatternTest = new FacadePatternTest();
 		FacadePatternTest.facadePatternTest();
 
+>>>>>>> parent of 81db854... Merge branch 'master' of https://github.com/shizi991016/DesignPattenProject_2019_10_19
 //		// 模式一 前端控制器
 //		FrontControllerTest test1 = new FrontControllerTest();
 //		test1.FrontController();

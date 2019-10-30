@@ -1,7 +1,5 @@
 package Scene_InPark.Class.FlowerParade.Command;
-
 import Scene_InPark.Class.FlowerParade.Floats.*;
-
 /**
  * 命令模式，子类，随机打乱花车顺序
  */
@@ -10,7 +8,7 @@ public class RandomOrderCommand extends Command {
     protected static FloatParade receiver = FloatParade.getInstance();
     //执行命令
     public void action() {
-        System.out.print("随机顺序命令: ");
+        System.out.print("Random Order: ");
         receiver.randomOrder();
     }
 }
