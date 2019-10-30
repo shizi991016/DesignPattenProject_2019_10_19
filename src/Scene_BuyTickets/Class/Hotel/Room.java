@@ -33,7 +33,7 @@ public abstract class Room {
     public void printAllInfo(){
         this.printPartInfo();
         if (roomState.printState().equals("入住")) {
-            System.out.print("  房间入住人数:" + touristNumber);
+            System.out.println("  房间入住人数:" + touristNumber);
             for(int i=0;i<touristName.size();i++){
                 System.out.print("  旅客" + (i+1) + "姓名:" + touristName.get(i));
                 System.out.print("  旅客" + (i+1) + "身份证号:" + touristId.get(i));

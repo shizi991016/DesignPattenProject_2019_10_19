@@ -106,7 +106,7 @@ public class Hotel {
 
     // 查询某一具体房间
     public void printRoomInfo(String _room_id){
-        System.out.print("房间"+_room_id+"信息:");
+        System.out.println("房间"+_room_id+"信息:");
         for(int i=0;i<roomList.size();i++){
             if(roomList.get(i).getRoomID().equals(_room_id)){
                 roomList.get(i).printAllInfo();
@@ -126,7 +126,7 @@ public class Hotel {
         for(int i=0;i<roomList.size();i++){
             if(roomList.get(i).getRoomID().equals(_room_id)&&roomList.get(i).getRoomState().printState().equals("空闲")){
                 roomList.get(i).lineIn(_tourist_number,_tourist_name,_tourist_id);
-                System.out.print("入住成功，入住后的"+_room_id+"房间信息为:");
+                System.out.println("入住成功，入住后的"+_room_id+"房间信息为:");
                 roomList.get(i).printAllInfo();
                 return;
             }
@@ -141,7 +141,7 @@ public class Hotel {
             if(roomList.get(i).getRoomID().equals(_room_id)){
                 if(roomList.get(i).getTouristNumber()!=0){
                     roomList.get(i).liveOut();
-                    System.out.print("退房成功，退房后的"+_room_id+"房间信息为:");
+                    System.out.println("退房成功，退房后的"+_room_id+"房间信息为:");
                     roomList.get(i).printAllInfo();
                     return;
                 }
@@ -151,7 +151,7 @@ public class Hotel {
                 }
             }
         }
-        System.out.print("退房失败，");
+        System.out.println("退房失败，");
         Room nullRoom = roomFactory.createRoom(null,null);
         nullRoom.printAllInfo();
     }
@@ -161,7 +161,7 @@ public class Hotel {
         for(int i=0;i<roomList.size();i++){
             if(roomList.get(i).getRoomID().equals(_room_id)&&roomList.get(i).getTouristNumber()==0){
                 roomList.get(i).setRoomState(_room_state);
-                System.out.print("更改成功，更改后的"+_room_id+"房间信息为:");
+                System.out.println("更改成功，更改后的"+_room_id+"房间信息为:");
                 roomList.get(i).printAllInfo();
                 return;
             }
@@ -180,7 +180,7 @@ public class Hotel {
         }
         Room _room = roomFactory.createRoom(_room_type,_room_id);
         roomList.add(_room);
-        System.out.print("添加成功，添加的房间信息为：");
+        System.out.println("添加成功，添加的房间信息为：");
         _room.printPartInfo();
     }
 
@@ -190,7 +190,7 @@ public class Hotel {
             if(roomList.get(i).getRoomID().equals(_room_id)){
                 if(roomList.get(i).getTouristNumber()==0){
                     roomList.remove(i);
-                    System.out.print("删除成功！目前所有房间信息为");
+                    System.out.println("删除成功！目前所有房间信息为:");
                     this.printAllRoomInfo();
                     return;
                 }

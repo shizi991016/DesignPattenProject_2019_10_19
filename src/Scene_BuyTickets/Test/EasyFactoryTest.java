@@ -2,17 +2,19 @@ package Scene_BuyTickets.Test;
 import Scene_BuyTickets.Class.Hotel.*;
 
 public class EasyFactoryTest {
-    public void EasyFactory(){
-        System.out.println("****************************************************************************");
-        System.out.println("模式二 简单工厂模式(Easy Factory)：");
-        System.out.println("相关类：Hotel RoomFactory Room SmallRoom MiddleRoom LargeRoom NullRoom");
-        System.out.println("模式二 测试一 控制器Hotel通过addNewRoom函数调用RoomFactory来生产SmallRoom");
+    public static void easyFactoryTest(){
+        System.out.println("\n" +"----------------------------------------");
+        System.out.println("2.简单工厂模式(Easy Factory)：");
+        System.out.println("\n测试一:");
+        System.out.println("Hotel调用addNewRoom函数生产SmallRoom");
         Hotel hotel = Hotel.getInstance();
         hotel.addNewRoom("201","SMALL");
-        System.out.println("模式二 测试二 控制器Hotel通过addNewRoom函数调用RoomFactory来生产MiddleRoom");
+        System.out.println("\n测试二:");
+        System.out.println("Hotel调用addNewRoom函数生产MiddleRoom");
         hotel.addNewRoom("202","MIDDLE");
-        System.out.println("模式二 测试三 控制器Hotel通过addNewRoom函数调用RoomFactory来生产LargeRoom");
+        System.out.println("\n测试三:");
+        System.out.println("Hotel调用addNewRoom函数生产LargeRoom");
         hotel.addNewRoom("203","LARGE");
-        System.out.println("*****************************************************************************");
+        System.out.println("----------------------------------------" + "\n");
     }
 }
