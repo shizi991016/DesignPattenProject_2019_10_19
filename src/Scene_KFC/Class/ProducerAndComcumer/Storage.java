@@ -1,4 +1,8 @@
 package Scene_KFC.Class.ProducerAndComcumer;
+/*
+ *仓库类，作为生产者消费者的成员
+ */
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -6,8 +10,8 @@ public class Storage {
     private final int MAX_SIZE = 100;//仓库最大容量
     private List list = new LinkedList();//产品存储在这里
 
-
-    public void produce(int num) {//生产num个产品
+    //生产num个产品
+    public void produce(int num) {
         synchronized (list) {
             //一定是while，因为wait被唤醒后需要判断是不是满足生产条件
             while(list.size()+num > MAX_SIZE) {
@@ -26,7 +30,8 @@ public class Storage {
             list.notifyAll();
         }
     }
-        public void consume(int num) {//消费num个产品
+    //消费num个产品
+    public void consume(int num) {
             synchronized (list) {
                 while(list.size() < num) {
                     System.out.println("暂时不能执行消费任务");
