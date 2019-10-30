@@ -27,6 +27,7 @@ public class Broadcast {
         //判断是否游园即将关闭，关闭则通知所有在名单中的游客
         if (!gardenState){
             System.out.println("游园状态改变置为闭园");
+            System.out.println("changeGardenState(boolean)调用notifyAllTourists()通知所有游客");
             notifyAllTourists();
         }
         else{
@@ -48,6 +49,7 @@ public class Broadcast {
 
             System.out.println("游园状态置为闭园");
 
+            System.out.println("changeGardenState(boolean,Adapter)调用notifyAllTourists(String)通知所有游客");
             //使用切换后的语言通知所有游客
             notifyAllTourists(message);
 
@@ -62,6 +64,7 @@ public class Broadcast {
 
         System.out.println("广播：游园即将关闭，请各位游客尽快出园");
 
+        System.out.println("notifyAllTourists()调用Tourists中changeBehavior()使得游客行为更新");
         for (int i = 0; i < noticeList.size(); i++) {
             noticeList.get(i).changeBehavior();
         }
@@ -69,14 +72,17 @@ public class Broadcast {
 
     //接收游客寻人寻物的委托
     public void notifyLookingFor (String lostName, Tourist seeker, String seekerName) {
+        System.out.println("Broadcast类的函数notifyLookingFor接收委托，调用notifyAllTourists(String,Tourist,String)");
         notifyAllTourists(lostName, seeker, seekerName);
     }
 
     //通知所有游客寻人寻物
     private void notifyAllTourists(String lostName, Tourist seeker, String seekerName) {
 
+        System.out.println("函数notifyAllTourists通知所有游客寻人寻物");
         System.out.println("广播：游客" + seekerName + "正在寻找" + lostName);
 
+        System.out.println("函数notifyAllTourists调用Tourists类receiveSearchInformation使得其他游客接收寻人寻物通知");
         for (int i = 0; i < noticeList.size(); i++) {
             noticeList.get(i).receiveSearchInformation(lostName, seeker);
         }
@@ -87,6 +93,7 @@ public class Broadcast {
 
         System.out.println(message);
 
+        System.out.println("notifyAllTourists(String)调用Tourists中changeBehavior()使得游客行为更新");
         for (int i = 0; i < noticeList.size(); i++) {
             noticeList.get(i).changeBehavior();
         }

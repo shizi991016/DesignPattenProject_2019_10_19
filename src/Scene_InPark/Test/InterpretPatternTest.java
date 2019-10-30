@@ -51,7 +51,6 @@ public class InterpretPatternTest {
             flag = sc.nextInt();
         }
 
-        sc.close();
         System.out.println("----------------------------------------" + "\n");
     }
 }

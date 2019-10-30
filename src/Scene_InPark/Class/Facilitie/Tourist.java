@@ -30,19 +30,19 @@ public class Tourist {
 		int idea = (int) (Math.random() * 2);
 
 		if (idea == 0) {
-			System.out.println("Tourist:changeBehavior:" + this.name + "改变行为，溜进厕所，留在园内");
+			System.out.println( this.name + "改变行为，溜进厕所，留在园内");
 		}
 		if (idea == 1) {
-			System.out.println("Tourist:changeBehavior:" + this.name + "改变行为，出园回家");
+			System.out.println( this.name + "改变行为，出园回家");
 		}
 		if (idea == 2){
-			System.out.println("Tourist:changeBehavior:" + this.name + "改变行为，入住酒店");
+			System.out.println( this.name + "改变行为，入住酒店");
 		}
 	}
 
 	//委托广播寻人寻物
 	public void lookingFor (String lostName , Broadcast broadcast){
-		System.out.println("Tourist:lookingFor:游客" + this.name + "委托广播发布寻找" + lostName );
+		System.out.println( this.name + "委托广播发布寻找" + lostName );
 		broadcast.notifyLookingFor (lostName, this, this.name);
 	}
 
@@ -50,7 +50,7 @@ public class Tourist {
 	public void receiveSearchInformation (String lostname, Tourist seeker){
 		//如果寻物的不是自己，则听到广播消息
 		if(seeker != this){
-			System.out.println("Tourist:receiveSearchInformation:" + this.name + "听到" + seeker.name +
+			System.out.println( this.name + "听到" + seeker.name +
 					"寻找" + lostname + "的信息");
 		}
 	}

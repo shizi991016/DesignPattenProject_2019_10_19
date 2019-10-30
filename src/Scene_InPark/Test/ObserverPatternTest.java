@@ -20,6 +20,11 @@ public class ObserverPatternTest {
         broadcast.addList(tourist1);
         broadcast.addList(tourist2);
 
+        //方便测试
+        System.out.println("\n" +"----------------------------------------");
+        System.out.println("14.观察者模式(ObserverPattern)：");
+        System.out.println("\n"+"测试一：");
+        System.out.print("游园现在为开放状态");
         //选择是否闭园
         System.out.print("请您选择是否要改变游园状态将其置为闭园：A、闭园，B、保持开放");
 
@@ -28,8 +33,11 @@ public class ObserverPatternTest {
         String state = sc.next();
 
         if (state.equals("A")) {
+
+            System.out.println("Broadcast调用changeGardenState(boolean改变游园状态");
             //闭园
             broadcast.changeGardenState(false);
+
         } else if (state.equals("B")) {
             //维持开放
             broadcast.changeGardenState(true);

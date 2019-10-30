@@ -23,12 +23,15 @@ public class Adapter implements Chinese, English, German{
         String message = null;
 
         if (language.equals("A")) {
+            System.out.println("调用Chinese类将语言置为中文");
             message = Chinese.chinese();//调用Chinese类的方法将语音设置为中文
         }
         else if (language.equals("B")) {
+            System.out.println("调用English类将语言置为英文");
             message = English.english();//调用English类的方法将语音设置成英语
         }
         else if (language.equals("C")) {
+            System.out.println("调用German类将语言置为德文");
             message = German.german();//调用German类的方法将语音设置为德语
         }
         else {
