@@ -10,12 +10,14 @@ import java.util.Scanner;
 public class HotelReceptionView {
     public void show(){
         Hotel hotel = Hotel.getInstance();
-        System.out.println("欢迎使用酒店前台登记系统");
-        System.out.println("1 查询所有空闲房间");
-        System.out.println("2 查询指定类型空闲房间");
-        System.out.println("3 办理入住");
-        System.out.println("4 办理退房");
-        System.out.println("0 退出系统");
+        System.out.println("==================================================================");
+        System.out.println("=======================欢迎使用酒店前台登记系统====================");
+        System.out.println("========================1 查询所有空闲房间=========================");
+        System.out.println("========================2 查询指定类型空闲房间=====================");
+        System.out.println("========================3 办理入住================================");
+        System.out.println("========================4 办理退房================================");
+        System.out.println("========================0 退出系统================================");
+        System.out.println("==================================================================");
         System.out.print("请输入您要使用的业务序号：");
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
