@@ -4,7 +4,7 @@ package Scene_InPark.Class.Broadcast;
 
 import java.util.Scanner;
 
-public class Adapter {
+public class Adapter implements Chinese, English, German{
 
     //要切换成的语言,默认为中文
     private String language = "A";
