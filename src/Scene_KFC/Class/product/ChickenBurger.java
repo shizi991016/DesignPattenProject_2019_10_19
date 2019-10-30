@@ -15,8 +15,8 @@ import Scene_KFC.Class.type.Meat_or_veg;
 public class ChickenBurger extends Food {
 
 
-    private float price;   //鸡肉堡的价格，属性私有满足不变模式
-    private float weight;  //鸡肉堡的重量，属性私有满足不变模式
+    private float price;
+    private float weight;
     public Meat_or_veg am;//桥接模式分类成员
 
     public ChickenBurger(){
