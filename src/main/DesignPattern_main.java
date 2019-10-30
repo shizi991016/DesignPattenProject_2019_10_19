@@ -53,8 +53,8 @@ public class DesignPattern_main {
 //	  	// 模式二十三 迭代器模式
 //	  	IteratorPatternTest.iteratorPatternTest();
 //
-		// 模式三十一 责任链模式
-		ResponsibilityPatternTest.responsibilityPatternTest();
+//		// 模式三十一 责任链模式
+//		ResponsibilityPatternTest.responsibilityPatternTest();
 	}
 
 }
