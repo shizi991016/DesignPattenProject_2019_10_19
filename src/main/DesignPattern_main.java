@@ -31,7 +31,28 @@ public class DesignPattern_main {
 //
 //		// 模式十三 访问者模式
 //		VisitorPatternTest.visitorPatternTest();
-
+//
+//     	// 模式十七 模板模式
+//	  	TemplateMethodTest.templateMethodTest();
+//	  
+//		// 模式十八 策略模式
+//	  	StrategyPatternTest.strategyPatternTest();
+//
+//	  	// 模式十九 工厂模式
+//	  	FactoryPatternTest.factoryPatternTest();
+//
+//	  	// 模式二十 解释器模式
+//	  	InterpretPatternTest.interpretPatternTest();
+//
+//	  	// 模式二十一 命令模式
+//	  	CommandPatternTest.commandPatternTest();
+//
+//	  	// 模式二十二 备忘录模式
+//	  	MementoPatternTest.mementoPatternTest();
+//
+//	  	// 模式二十三 迭代器模式
+//	  	IteratorPatternTest.iteratorPatternTest();
+//
 		// 模式三十一 责任链模式
 		ResponsibilityPatternTest.responsibilityPatternTest();
 	}
