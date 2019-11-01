@@ -9,8 +9,8 @@ public class FlyweightPatternTest {
 
     public static void flyweightPatternTest(){
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("9.享元模式(Flyweight)：");
-        System.out.println("\n"+"测试一：");
+        System.out.println("9. 享元模式(Flyweight)：");
+        System.out.println("\n"+"测试：");
         DreamIsland dis=DreamIsland.getInstance();
         DreamIsland.init();
         //新建区域
@@ -24,6 +24,6 @@ public class FlyweightPatternTest {
         dis.getFacilitie(areaParentArea).addChild(mArea);
         System.out.println("\n"+"当前游乐园结构为：");
         System.out.println(dis.getFacilitie("DreamIsland").printAll());
-        System.out.println("\n" +"----------------------------------------");
+        System.out.println("----------------------------------------" + "\n");
     }
 }

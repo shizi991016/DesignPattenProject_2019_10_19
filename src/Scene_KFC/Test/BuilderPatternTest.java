@@ -14,8 +14,8 @@ public class BuilderPatternTest {
         director.constructMeal();;
         NormalMeal mealA=director.getMeal();
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("29.建造者模式(Builder)：");
-        System.out.println("\n测试一:");
+        System.out.println("29. 建造者模式(Builder)：");
+        System.out.println("\n测试:");
         System.out.println("创建A套餐");
         System.out.println("A Meal");
         mealA.showItems();
