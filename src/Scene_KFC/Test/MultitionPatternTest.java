@@ -5,8 +5,8 @@ public class MultitionPatternTest {
 	public static void multitionPatternTest() {
 		// TODO Auto-generated method stub
 		System.out.println("\n" +"----------------------------------------");
-		System.out.println("24.多例模式(Multition)：");
-		System.out.println("\n"+"测试一：");
+		System.out.println("24. 多例模式(Multition)：");
+		System.out.println("\n"+"测试：");
 		Tourist tom = new Tourist("tom");
 		tom.gotoKFC();
 		System.out.println("访问随机单例成功");

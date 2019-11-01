@@ -9,8 +9,8 @@ public class FlyweightPatternTest {
 
     public static void flyweightPatternTest(){
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("9.享元模式(Flyweight)：");
-        System.out.println("\n"+"测试一：");
+        System.out.println("9. 享元模式(Flyweight)：");
+        System.out.println("\n"+"测试：");
         DreamIsland dis=DreamIsland.getInstance();
         DreamIsland.init();
         //新建区域
