@@ -24,17 +24,17 @@ public class HotelManagementView {
         System.out.println("0 退出");
         System.out.print("请输入您要使用的业务序号：");
         Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
+        String num = sc.next();
         while(true){
             switch(num){
-                case 0: //退出
+                case "0": //退出
                     return;
-                case 1: //打印所有房间信息
+                case "1": //打印所有房间信息
                     hotel.printAllRoomInfo();
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
-                case 2: //查询某一类型房间
+                case "2": //查询某一类型房间
                     System.out.print("请输入房间类型,不区分大小写[SMALL MIDDLE LARGE]：");
                     String type = sc.next();
                     if(type.equalsIgnoreCase("SMALL")||type.equalsIgnoreCase("MIDDLE")||type.equalsIgnoreCase("LARGE")){
@@ -44,14 +44,14 @@ public class HotelManagementView {
                         System.out.println("输入有误！");
                     }
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
-                case 3: //查询所有空闲房间
+                case "3": //查询所有空闲房间
                     hotel.printEmptyRoomInfo();
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
-                case 4: //查询指定类型空闲房间
+                case "4": //查询指定类型空闲房间
                     System.out.print("请输入房间类型,不区分大小写[SMALL MIDDLE LARGE]：");
                     String type2 = sc.next();
                     if(type2.equalsIgnoreCase("SMALL")||type2.equalsIgnoreCase("MIDDLE")||type2.equalsIgnoreCase("LARGE")){
@@ -61,16 +61,16 @@ public class HotelManagementView {
                         System.out.println("输入有误！");
                     }
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
-                case 5: //查询某一具体房间信息
+                case "5": //查询某一具体房间信息
                     System.out.print("请输入要查询的房间号：");
                     String room_id2 = sc.next();
                     hotel.printRoomInfo(room_id2);
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
-                case 6: //办理入住
+                case "6": //办理入住
                     System.out.print("请输入要入住的房间号：");
                     String _room_id = sc.next();
                     System.out.print("请输入要入住的人数：");
@@ -85,16 +85,16 @@ public class HotelManagementView {
                     }
                     hotel.lineIn(_tourist_number,_tourist_name,_tourist_id,_room_id);
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
-                case 7: //办理退房
+                case "7": //办理退房
                     System.out.print("请输入要退房的房间号：");
                     String room_id = sc.next();
                     hotel.liveOut(room_id);
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
-                case 8: //更改房间状态信息
+                case "8": //更改房间状态信息
                     System.out.print("请输入要变更状态的房间号：");
                     String room_id5 = sc.next();
                     System.out.print("请输入变更后的房间状态 [1空闲 2装修]：");
@@ -110,9 +110,9 @@ public class HotelManagementView {
                         System.out.println("输入有误！");
                     }
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
-                case 9: //增加房间
+                case "9": //增加房间
                     System.out.print("请输入新增的房间号：");
                     String room_id4 = sc.next();
                     System.out.print("请输入新增的房间类型,不区分大小写[SMALL MIDDLE LARGE]：");
@@ -124,19 +124,19 @@ public class HotelManagementView {
                         System.out.println("输入有误！");
                     }
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
-                case 10: //删除房间
+                case "10": //删除房间
                     System.out.print("请输入要删除的房间号：");
                     String room_id3 = sc.next();
                     hotel.deleteRoom(room_id3);
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
                 default: //输入错误
                     System.out.println("输入有误，请重新输入!");
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
             }
         }
