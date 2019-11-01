@@ -24,6 +24,6 @@ public class FlyweightPatternTest {
         dis.getFacilitie(areaParentArea).addChild(mArea);
         System.out.println("\n"+"当前游乐园结构为：");
         System.out.println(dis.getFacilitie("DreamIsland").printAll());
-        System.out.println("\n" +"----------------------------------------");
+        System.out.println("----------------------------------------" + "\n");
     }
 }

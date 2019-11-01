@@ -13,7 +13,7 @@ public class MultitionPatternTest {
 		tom.gotoKFC(0);
 		tom.gotoKFC(1);
 		System.out.println("访问指定单例成功");
-		System.out.println("\n" +"----------------------------------------");
+        System.out.println("----------------------------------------" + "\n");
 	}
 
 }
