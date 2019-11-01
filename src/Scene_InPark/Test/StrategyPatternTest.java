@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class StrategyPatternTest {
     public static void strategyPatternTest(){
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("17.策略模式(Strategy Pattern)：");
-        System.out.println("\n"+"测试一:");
+        System.out.println("17. 策略模式(Strategy Pattern)：");
+        System.out.println("\n"+"测试:");
 
         Scanner scan = new Scanner(System.in);
         int afternoonPlan = 0;
