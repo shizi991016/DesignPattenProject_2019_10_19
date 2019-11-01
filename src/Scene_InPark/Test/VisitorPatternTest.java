@@ -25,6 +25,7 @@ public class VisitorPatternTest {
         System.out.println("游客A游览后所有设施的客流量如下：");
         System.out.println(dis.getFacilitie("DreamIsland").printFlow());
 
+
         System.out.println("\n"+"测试二：");
         System.out.println("visitorB调用visit函数改变设施的客流量\n" +
                 "游乐园调用printFlow函数打印所有设施客流量");

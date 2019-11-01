@@ -8,6 +8,7 @@ public class CompositePatternTest {
     public static void compositePatternTest(){
         System.out.println("\n" +"----------------------------------------");
         System.out.println("12.组合模式(Composite)：");
+        //获取游乐园单例并初始化游乐园
         DreamIsland dis=DreamIsland.getInstance();
         DreamIsland.init();
 

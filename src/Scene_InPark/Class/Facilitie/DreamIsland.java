@@ -55,23 +55,25 @@ public class DreamIsland {
 
 	public static void init()
 	{
-
+		//获取游乐园单例
 		DreamIsland dis=DreamIsland.getInstance();
+		//判断游乐园是否已经初始化
 		if (dis.initFlag == false) {
 			System.out.println("============开始初始化设施===========");
+			//新建区域
 			Facilitie root = dis.getFacilitie("DreamIsland", 2);
 
 			Facilitie areaA = dis.getFacilitie("A", 2);
 			Facilitie areaB = dis.getFacilitie("B", 2);
 			Facilitie areaC = dis.getFacilitie("C", 2);
 			Facilitie areaD = dis.getFacilitie("D", 2);
-
+			//新建设施
 			Facilitie rollerCoaster = dis.getFacilitie("rollerCoaster", 1);
 			Facilitie ferrisWheel = dis.getFacilitie("ferrisWheel", 1);
 			Facilitie KFC = dis.getFacilitie("kfc", 1);
 			Facilitie merryGoAround = dis.getFacilitie("merryGoAround", 1);
 			Facilitie aquarium = dis.getFacilitie("aquarium", 1);
-
+			//将设施加入进区域包含设施表
 			root.addChild(areaA);
 			root.addChild(areaB);
 			root.addChild(areaC);
@@ -84,6 +86,7 @@ public class DreamIsland {
 
 			System.out.println("============设施初始化完成===========");
 			System.out.println("当前游乐园设施结构为：");
+			//打印所有区域和设施的名称
 			System.out.println(root.printAll());
 			dis.initFlag=true;
 		}

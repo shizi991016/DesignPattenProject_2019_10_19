@@ -55,8 +55,10 @@ public class Tourist {
 		}
 	}
 
+	//visitor模式中的visit方法
 	public void Visit(Facilitie fc) {
 		Facilitie current = fc;
+		//去过的设施和包含其的所有区域的客流量都应加一
 		while(current!= null) {
 			current.TouristFlow++;
 			current=current.parent;
