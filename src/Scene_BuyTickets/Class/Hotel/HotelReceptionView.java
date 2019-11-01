@@ -18,17 +18,17 @@ public class HotelReceptionView {
         System.out.println("0 退出系统");
         System.out.print("请输入您要使用的业务序号：");
         Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
+        String num = num = sc.next();
         while(true){
             switch(num){
-                case 0: //退出
+                case "0": //退出
                     return;
-                case 1: //查询所有空闲房间
+                case "1": //查询所有空闲房间
                     hotel.printEmptyRoomInfo();
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
-                case 2: //查询指定类型空闲房间
+                case "2": //查询指定类型空闲房间
                     System.out.print("请输入房间类型,不区分大小写[SMALL MIDDLE LARGE]：");
                     String type = sc.next();
                     if(type.equalsIgnoreCase("SMALL")||type.equalsIgnoreCase("MIDDLE")||type.equalsIgnoreCase("LARGE")){
@@ -38,9 +38,9 @@ public class HotelReceptionView {
                         System.out.println("输入有误！");
                     }
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
-                case 3: //办理入住
+                case "3": //办理入住
                     System.out.print("请输入要入住的房间号：");
                     String _room_id = sc.next();
                     System.out.print("请输入要入住的人数：");
@@ -55,19 +55,19 @@ public class HotelReceptionView {
                     }
                     hotel.lineIn(_tourist_number,_tourist_name,_tourist_id,_room_id);
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
-                case 4: //办理退房
+                case "4": //办理退房
                     System.out.print("请输入要退房的房间号：");
                     String room_id = sc.next();
                     hotel.liveOut(room_id);
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
                 default:
                     System.out.println("输入有误，请重新输入!");
                     System.out.print("请输入您要使用的业务序号：");
-                    num = sc.nextInt();
+                    num = sc.next();
                     break;
             }
         }

@@ -50,7 +50,7 @@ public class CommandPatternTest {
         //根据输入执行命令，执行结果会产生相应备忘录
         Scanner sc = new Scanner(System.in);
         System.out.print("[提示]1:翻转  2:随机  3:初始  4:undo  5:redo  0:退出 : ");
-        int flag = sc.nextInt();
+        int flag = Integer.parseInt(sc.next());
         while (flag != 0) {
             switch (flag) {
                 case 1:
@@ -75,7 +75,7 @@ public class CommandPatternTest {
                     break;
             }
             System.out.print("[提示]1:翻转  2:随机  3:初始  4:undo  5:redo  0:退出 : ");
-            flag = sc.nextInt();
+            flag = Integer.parseInt(sc.next());
         }
         
         System.out.println("----------------------------------------" + "\n");

@@ -12,8 +12,8 @@ public class ImmutablePatternTest {
         BigMac bigmac=new BigMac();
         Packing wrapper=bigmac.packing();
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("28.不变模式(Immutable)：");
-        System.out.println("\n测试一:");
+        System.out.println("28. 不变模式(Immutable)：");
+        System.out.println("\n测试:");
         System.out.println("修改之前的材料"+wrapper.getMaterial());
         wrapper.setMaterial();
         System.out.println("尝试使用setMaterial()函数进行修改");
