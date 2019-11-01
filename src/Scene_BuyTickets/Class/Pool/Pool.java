@@ -5,7 +5,7 @@ import java.util.ArrayList;
 //对象池模拟类：对象池模式
 public class Pool {
     //对象池中对象个数
-    private final static int PoolItenNum = 10;
+    private final static int PoolItenNum = 5;
 
     //对象池中对象数组
 	private ArrayList<PoolItem> items = new ArrayList<PoolItem>();
@@ -35,6 +35,7 @@ public class Pool {
                 item.setUsed();
                 //使用Connection对空对象赋值
                 item.setConnecion(conn);
+                System.out.println("连接已创建");
                 return true;
             }
         }
@@ -50,12 +51,15 @@ public class Pool {
         for (int i = 0; i < len; ++i)
         {
             PoolItem item = items.get(i);
-            if (item.getCoon() == conn)
+            if(item.getCoon() == null)
+                break;
+            if (item.getCoon().getConnName().equals(conn.getConnName()))
             {
                 //将对象设为未被使用
                 item.setUnused();
                 //清空对象值
                 item.setConnecion(null);
+                System.out.println("连接已断开");
                 return;
             }
         }

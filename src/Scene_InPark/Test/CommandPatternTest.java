@@ -28,7 +28,7 @@ public class CommandPatternTest {
     //用于测试的静态函数
     public static void commandPatternTest() {
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("21.命令模式(Command Pattern):");
+        System.out.println("21. 命令模式(Command Pattern):");
 
         System.out.println("\n"+"测试一:");
         //获得花车游行类实例

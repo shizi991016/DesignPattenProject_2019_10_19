@@ -27,6 +27,9 @@ public class DesignPattern_main {
 		// 模式六 代理模式
 		ProxyPatternTest.proxyPatternTest();
 
+		// 模式七 对象池模式
+		PoolPatternTest.poolPatternTest();
+
 		// 模式八 门面模式
 		FacadePatternTest.facadePatternTest();
 
