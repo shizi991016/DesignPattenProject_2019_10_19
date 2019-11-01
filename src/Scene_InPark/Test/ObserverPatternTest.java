@@ -22,7 +22,7 @@ public class ObserverPatternTest {
 
         //方便测试
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("14.观察者模式(ObserverPattern)：");
+        System.out.println("14. 观察者模式(ObserverPattern)：");
         System.out.println("\n"+"测试一：");
         System.out.print("游园现在为开放状态");
         //选择是否闭园
