@@ -38,6 +38,8 @@ public class MediatorPatternTest {
         System.out.println("Tourist类调用lookingFor委托广播播报");
         //委托广播广播
         tourist1.lookingFor(lostName, broadcast);
+
+        System.out.println("----------------------------------------" + "\n");
     }
 }
 

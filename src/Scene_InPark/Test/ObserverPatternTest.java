@@ -45,5 +45,6 @@ public class ObserverPatternTest {
             System.out.print("字母输入错误，请重新输入");
             new ObserverPatternTest();
         }
+        System.out.println("----------------------------------------" + "\n");
     }
 }

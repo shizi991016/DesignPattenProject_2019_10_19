@@ -31,5 +31,7 @@ public class AdapterPatternTest {
 
         //将游园闭园语音改为切换的语言
         broadcast.changeGardenState(false, adapter);
+
+        System.out.println("----------------------------------------" + "\n");
     }
 }
