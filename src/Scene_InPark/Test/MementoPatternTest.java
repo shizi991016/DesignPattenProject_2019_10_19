@@ -28,9 +28,9 @@ public class MementoPatternTest {
     //用于测试的静态函数
     public static void mementoPatternTest() {
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("22.备忘录模式(Memento Pattern):");
+        System.out.println("22. 备忘录模式(Memento Pattern):");
         
-        System.out.println("\n"+"测试一:");
+        System.out.println("\n"+"测试:");
         //获得花车游行类实例
         FloatParade floatParade = FloatParade.getInstance();
         //初始化部分命令

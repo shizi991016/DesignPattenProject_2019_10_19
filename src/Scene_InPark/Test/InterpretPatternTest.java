@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class InterpretPatternTest {
     public static void interpretPatternTest() {
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("20.解释器模式(Interpret Pattern):");
+        System.out.println("20. 解释器模式(Interpret Pattern):");
 
         System.out.println("\n"+"测试一:");
         //设定几个默认问题
@@ -36,7 +36,7 @@ public class InterpretPatternTest {
         System.out.println("");
         Scanner sc = new Scanner(System.in);
         System.out.print("是否继续解释? (1: 是 , 0: 否): ");
-        int flag = sc.nextInt();
+        int flag = Integer.parseInt(sc.next());
         String problem;
         while (flag == 1) {
             System.out.print("请输入店铺编号 (例如 A-01): ");
@@ -48,7 +48,7 @@ public class InterpretPatternTest {
             }
             System.out.println("");
             System.out.print("是否继续解释? (1: 是 , 0: 否): ");
-            flag = sc.nextInt();
+            flag = Integer.parseInt(sc.next());
         }
 
         System.out.println("----------------------------------------" + "\n");
