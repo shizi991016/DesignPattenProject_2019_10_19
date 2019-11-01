@@ -10,16 +10,16 @@ import java.awt.image.RescaleOp;
 public class DesignPattern_main {
 	public static void main(String[] args) {
 		// 模式一 前端控制器
-		FrontControllerTest.frontControllerTest();
+		FrontControllerPatternTest.frontControllerPatternTest();
 
 		// 模式二 简单工厂
-		EasyFactoryTest.easyFactoryTest();
+		EasyFactoryPatternTest.easyFactoryPatternTest();
 
 		// 模式三 过滤器模式
 		FilterPatternTest.filterPatternTest();
 
 		// 模式四 空对象模式
-		NullObjectTest.nullObjectTest();
+		NullObjectPatternTest.nullObjectPatternTest();
 
 		// 模式五 状态模式
 		StatePatternTest.statePatternTest();
@@ -58,7 +58,7 @@ public class DesignPattern_main {
 		AdapterPatternTest.adapterPatternTest();
 
 		// 模式十七 模板模式
-	  	TemplateMethodTest.templateMethodTest();
+	  	TemplateMethodPatternTest.templateMethodPatternTest();
 
 		// 模式十八 策略模式
 	  	StrategyPatternTest.strategyPatternTest();
