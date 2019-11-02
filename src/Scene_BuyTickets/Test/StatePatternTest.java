@@ -7,7 +7,7 @@ import java.util.List;
 public class StatePatternTest {
     public static void statePatternTest(){
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("5.状态模式(State Pattern)：");
+        System.out.println("5. 状态模式(State Pattern)：");
         System.out.println("\n测试一:");
         System.out.println("控制器Hotel调用changeRoomState函数");
         Hotel hotel = Hotel.getInstance();

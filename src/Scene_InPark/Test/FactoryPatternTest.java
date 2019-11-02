@@ -5,8 +5,8 @@ import Scene_InPark.Class.TourPlan.*;
 public class FactoryPatternTest {
     public static void factoryPatternTest() {
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("18.工厂模式(Factory Pattern)：");
-        System.out.println("\n"+"测试一:");
+        System.out.println("18. 工厂模式(Factory Pattern)：");
+        System.out.println("\n"+"测试:");
 
         //初始化策略工厂
         StrategyFactory myStrategies1 = new Strategy1Factory();

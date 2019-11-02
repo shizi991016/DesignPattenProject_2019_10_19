@@ -4,11 +4,11 @@ import Scene_InPark.Class.TourPlan.RealizePlayPlan;
 
 import java.util.Scanner;
 
-public class TemplateMethodTest {
-    public static void templateMethodTest(){
+public class TemplateMethodPatternTest {
+    public static void templateMethodPatternTest(){
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("17.模板模式(Template Method)：");
-        System.out.println("\n"+"测试一:");
+        System.out.println("17. 模板模式(Template Method)：");
+        System.out.println("\n"+"测试:");
 
         Scanner scan = new Scanner(System.in);
         String morningPlan = "";

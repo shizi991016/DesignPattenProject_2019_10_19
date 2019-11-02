@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class AbstractFactoryPatternTest {
     public static void abstractFactoryPatternTest(){
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("11.抽象工厂模式(Abstract Factory)：");
-        System.out.println("\n"+"测试一：");
+        System.out.println("11. 抽象工厂模式(Abstract Factory)：");
+        System.out.println("\n"+"测试：");
         DreamIsland dis=DreamIsland.getInstance();
         DreamIsland.init();
 
@@ -34,6 +34,6 @@ public class AbstractFactoryPatternTest {
         dis.getFacilitie(fcParentArea).addChild(mfc);
         System.out.println("\n"+"当前游乐园结构为：");
         System.out.println(dis.getFacilitie("DreamIsland").printAll());
-        System.out.println("\n" +"----------------------------------------");
+        System.out.println("----------------------------------------" + "\n");
     }
 }

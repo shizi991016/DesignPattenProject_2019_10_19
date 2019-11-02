@@ -21,7 +21,7 @@ public class AdapterPatternTest {
 
         //方便测试
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("16.适配器模式(AdapterPattern)：");
+        System.out.println("16. 适配器模式(AdapterPattern)：");
         System.out.println("\n"+"测试一：");
 
 
@@ -31,5 +31,7 @@ public class AdapterPatternTest {
 
         //将游园闭园语音改为切换的语言
         broadcast.changeGardenState(false, adapter);
+
+        System.out.println("----------------------------------------" + "\n");
     }
 }

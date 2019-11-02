@@ -9,9 +9,9 @@ import Scene_InPark.Class.FlowerParade.Floats.*;
 public class IteratorPatternTest {
     public static void iteratorPatternTest() {
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("23.迭代器模式(Iterator Pattern):");
+        System.out.println("23. 迭代器模式(Iterator Pattern):");
 
-        System.out.println("\n"+"测试一:");
+        System.out.println("\n"+"测试:");
         //获得花车游行类实例
         FloatParade floatParade = FloatParade.getInstance();
 

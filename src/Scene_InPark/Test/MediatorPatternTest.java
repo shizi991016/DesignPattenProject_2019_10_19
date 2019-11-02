@@ -24,7 +24,7 @@ public class MediatorPatternTest {
 
         //方便测试
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("15.中介者模式(MediatorPattern)：");
+        System.out.println("15. 中介者模式(MediatorPattern)：");
         System.out.println("\n"+"测试一：");
         //游客选择委托广播播放寻人寻物启事
         System.out.println("张三委托广播播报寻人寻物启事");
@@ -38,6 +38,8 @@ public class MediatorPatternTest {
         System.out.println("Tourist类调用lookingFor委托广播播报");
         //委托广播广播
         tourist1.lookingFor(lostName, broadcast);
+
+        System.out.println("----------------------------------------" + "\n");
     }
 }
 

@@ -1,10 +1,10 @@
 package Scene_BuyTickets.Test;
 import Scene_BuyTickets.Class.Hotel.*;
 
-public class EasyFactoryTest {
-    public static void easyFactoryTest(){
+public class EasyFactoryPatternTest {
+    public static void easyFactoryPatternTest(){
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("2.简单工厂模式(Easy Factory)：");
+        System.out.println("2. 简单工厂模式(Easy Factory)：");
         System.out.println("\n测试一:");
         System.out.println("Hotel调用addNewRoom函数生产SmallRoom");
         Hotel hotel = Hotel.getInstance();

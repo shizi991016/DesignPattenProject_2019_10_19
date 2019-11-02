@@ -4,7 +4,7 @@ import Scene_KFC.Class.product.*;
 import Scene_KFC.Class.type.*;
 
 public class PrototypePatternTest {
-    public static void prototypePatternTest(String[] args) {
+    public static void prototypePatternTest() {
         System.out.println("\n" +"----------------------------------------");
         System.out.println("26.原型模式(PrototypePattern)：");
         System.out.println("\n"+"测试一：");
