@@ -16,11 +16,21 @@ public class AbstractFactoryPatternTest {
         System.out.println("\n"+"请输入您要创建的新设施名称：");
         Scanner sc = new Scanner(System.in);
         String mName=sc.next();
+        while(mName.isEmpty()){
+            System.out.println("请输入正确的名字！");
+            mName=sc.next();
+        }
+
         Facilitie mfc=dis.getFacilitie(mName,1);
 
         System.out.println("使用设施工厂创建设施成功");
         System.out.println("\n"+"请输入您要创建的新设施所在的区域名：");
         String fcParentArea=sc.next();
+        //dis.getFacilitie(fcParentArea).addChild(mfc);
+        while(dis.getFacilitie(fcParentArea)==null){
+            System.out.println("请输入正确的名字！");
+            fcParentArea=sc.next();
+        }
         dis.getFacilitie(fcParentArea).addChild(mfc);
         System.out.println("\n"+"当前游乐园结构为：");
         System.out.println(dis.getFacilitie("DreamIsland").printAll());
