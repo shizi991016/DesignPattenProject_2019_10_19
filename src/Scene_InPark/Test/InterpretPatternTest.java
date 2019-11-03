@@ -36,9 +36,9 @@ public class InterpretPatternTest {
         System.out.println("");
         Scanner sc = new Scanner(System.in);
         System.out.print("是否继续解释? (1: 是 , 0: 否): ");
-        int flag = Integer.parseInt(sc.next());
+        String flag = sc.next();
         String problem;
-        while (flag == 1) {
+        while (flag.equals("1")) {
             System.out.print("请输入店铺编号 (例如 A-01): ");
             problem = sc.next();
             if(ask.Asking(problem)) {
@@ -48,7 +48,7 @@ public class InterpretPatternTest {
             }
             System.out.println("");
             System.out.print("是否继续解释? (1: 是 , 0: 否): ");
-            flag = Integer.parseInt(sc.next());
+            flag = sc.next();
         }
 
         System.out.println("----------------------------------------" + "\n");

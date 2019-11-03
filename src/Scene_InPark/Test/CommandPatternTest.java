@@ -50,32 +50,35 @@ public class CommandPatternTest {
         //根据输入执行命令，执行结果会产生相应备忘录
         Scanner sc = new Scanner(System.in);
         System.out.print("[提示]1:翻转  2:随机  3:初始  4:undo  5:redo  0:退出 : ");
-        int flag = Integer.parseInt(sc.next());
-        while (flag != 0) {
+        String flag = sc.next();
+        while (!flag.equals("0")) {
             switch (flag) {
-                case 1:
+                case "1":
                     commands[0].execute();
                     printName(floatParade);
                     break;
-                case 2:
+                case "2":
                     commands[1].execute();
                     printName(floatParade);
                     break;
-                case 3:
+                case "3":
                     commands[2].execute();
                     printName(floatParade);
                     break;
-                case 4:
+                case "4":
                     Command.undo();
                     printName(floatParade);
                     break;
-                case 5:
+                case "5":
                     Command.redo();
                     printName(floatParade);
                     break;
+                default:
+                    System.out.println("输入无效，重新输入!");
+                    break;
             }
             System.out.print("[提示]1:翻转  2:随机  3:初始  4:undo  5:redo  0:退出 : ");
-            flag = Integer.parseInt(sc.next());
+            flag = sc.next();
         }
         
         System.out.println("----------------------------------------" + "\n");
