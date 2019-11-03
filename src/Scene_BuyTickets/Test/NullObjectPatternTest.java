@@ -1,8 +1,8 @@
 package Scene_BuyTickets.Test;
 import Scene_BuyTickets.Class.Hotel.*;
 
-public class NullObjectTest {
-    public static void nullObjectTest(){
+public class NullObjectPatternTest {
+    public static void nullObjectPatternTest(){
         System.out.println("\n" +"----------------------------------------");
         System.out.println("4. 空对象模式(Null Object)：");
         System.out.println("\n测试一:");

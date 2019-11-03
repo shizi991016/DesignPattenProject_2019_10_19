@@ -18,30 +18,34 @@ public class CompositePatternTest {
         System.out.println("请输入您要查询的区域名：");
         Scanner sc = new Scanner(System.in);
         String findAreaName=sc.next();
-        if(dis.getFacilitie(findAreaName)!=null){
-            //打印内容
-            System.out.println(findAreaName+"的包含设施和区域为:");
-            System.out.println(dis.getFacilitie(findAreaName).printAll());
-            //打印位置（目录）
-            System.out.println(findAreaName+"的地址为:");
-            System.out.println(dis.getFacilitie(findAreaName).printDirectory());
+        while (dis.getFacilitie(findAreaName)==null)
+        {
+            System.out.println("不存在区域"+findAreaName+"\n请输入正确的区域名");
+            findAreaName=sc.next();
         }
-        else{System.out.println("不存在区域"+findAreaName);}
+        //打印内容
+        System.out.println(findAreaName+"的包含设施和区域为:");
+        System.out.println(dis.getFacilitie(findAreaName).printAll());
+        //打印位置（目录）
+        System.out.println(findAreaName+"的地址为:");
+        System.out.println(dis.getFacilitie(findAreaName).printDirectory());
 
         //查询设施
         System.out.println("\n"+"测试二：");
         System.out.println("游乐园调用printAll和printDirectory打印设施内容和位置");
         System.out.println("请输入您要查询的设施名：");
         String findFcName=sc.next();
-        if(dis.getFacilitie(findFcName)!=null){
-            //打印内容
-            System.out.println(findFcName+"的包含设施和区域为:");
-            System.out.println(dis.getFacilitie(findFcName).printAll());
-            //打印位置（目录）
-            System.out.println(findFcName+"的地址为:");
-            System.out.println(dis.getFacilitie(findFcName).printDirectory());
+        while (dis.getFacilitie(findFcName)==null)
+        {
+            System.out.println("不存在区域"+findFcName+"\n请输入正确的区域名");
+            findFcName=sc.next();
         }
-        else{System.out.println("不存在设施"+findFcName);}
+        //打印内容
+        System.out.println(findFcName+"的包含设施和区域为:");
+        System.out.println(dis.getFacilitie(findFcName).printAll());
+        //打印位置（目录）
+        System.out.println(findFcName+"的地址为:");
+        System.out.println(dis.getFacilitie(findFcName).printDirectory());
         System.out.println("----------------------------------------");
     }
 }
