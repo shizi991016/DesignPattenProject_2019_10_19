@@ -28,23 +28,28 @@ public class ObserverPatternTest {
         //选择是否闭园
         System.out.print("请您选择是否要改变游园状态将其置为闭园：A、闭园，B、保持开放");
 
+        while(true){
         //吃入输入
         Scanner sc = new Scanner(System.in);
         String state = sc.next();
 
-        if (state.equals("A")) {
+        //输入错误则循环
 
-            System.out.println("Broadcast调用changeGardenState(boolean改变游园状态");
-            //闭园
-            broadcast.changeGardenState(false);
+            if (state.equals("A")) {
 
-        } else if (state.equals("B")) {
-            //维持开放
-            broadcast.changeGardenState(true);
-        } else {
-            System.out.print("字母输入错误，请重新输入");
-            new ObserverPatternTest();
+                System.out.println("Broadcast调用changeGardenState(boolean)改变游园状态");
+                //闭园
+                broadcast.changeGardenState(false);
+                System.out.println("----------------------------------------" + "\n");
+                break;
+            } else if (state.equals("B")) {
+                //维持开放
+                broadcast.changeGardenState(true);
+                System.out.println("----------------------------------------" + "\n");
+                break;
+            } else {
+                System.out.println("字母输入错误，请重新输入");
+            }
         }
-        System.out.println("----------------------------------------" + "\n");
-    }
+        }
 }

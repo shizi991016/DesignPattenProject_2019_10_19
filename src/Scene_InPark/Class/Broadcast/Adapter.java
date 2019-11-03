@@ -14,7 +14,7 @@ public class Adapter implements Chinese, English, German{
         //通知使用者切换语言
         System.out.print("请选择您需要切换的语言：A、取消切换，默认中文，B、English，C、Deutsch\n" + //中文
                 "Please select the language you need to switch：A、取消切换，默认中文，B、English，C、Deutsch\n" +//英文
-                "Bitte wählen Sie die gewünschte Sprache aus：A、D、取消切换，默认中文，B、English，C、Deutsch");//德文
+                "Bitte wählen Sie die gewünschte Sprache aus：A、取消切换，默认中文，B、English，C、Deutsch");//德文
 
         Scanner sc = new Scanner(System.in);
         language = sc.next();
@@ -35,8 +35,8 @@ public class Adapter implements Chinese, English, German{
             message = German.german();//调用German类的方法将语音设置为德语
         }
         else {
+            message = "false";
             System.out.println("字母输入错误，请重新输入");
-            translate();
         }
         //返回切换好的语音
         return message;

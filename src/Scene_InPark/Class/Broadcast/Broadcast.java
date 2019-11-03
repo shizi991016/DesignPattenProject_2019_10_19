@@ -43,9 +43,15 @@ public class Broadcast {
 
         //判断是否游园即将关闭，关闭则通知所有在名单中的游客
         if (!gardenState){
+            String message = null;
 
-            //使用适配器切换语言
-            String message = adapter.translate();
+            //如果输出错误则循环
+            while(true){
+                //使用适配器切换语言
+                message = adapter.translate();
+                if(message.equals("false")){}
+                else break;
+            }
 
             System.out.println("游园状态置为闭园");
 
