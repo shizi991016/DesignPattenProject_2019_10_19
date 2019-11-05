@@ -10,6 +10,13 @@ import java.awt.image.RescaleOp;
 public class DesignPattern_main {
 	public static void main(String[] args) {
 
+		System.out.println("\n" +"----------------------------------------");
+		System.out.println("本测试代码为顺序测试31种设计模式");
+		System.out.println("一些设计模式需要用户输入");
+		System.out.println("按提示进行输入即可");
+		System.out.println("----------------------------------------");
+
+		
 		// 模式一 前端控制器
 		FrontControllerPatternTest.frontControllerPatternTest();
 
