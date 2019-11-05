@@ -55,7 +55,7 @@ public class Broadcast {
 
             System.out.println("游园状态置为闭园");
 
-            System.out.println("changeGardenState(boolean,Adapter)调用notifyAllTourists(String)通知所有游客");
+            System.out.println("Broadcast类的changeGardenState(boolean,Adapter)调用notifyAllTourists(String)通知所有游客");
             //使用切换后的语言通知所有游客
             notifyAllTourists(message);
 
