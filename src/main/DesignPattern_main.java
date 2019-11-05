@@ -218,6 +218,8 @@ public class DesignPattern_main {
 			{
 				System.out.println("您的输入有错误，请重新输入");
 			}
+			System.out.println("输入数字编号，进入相应的测试");
+			type = input.nextLine();
 		}
 	}
 
