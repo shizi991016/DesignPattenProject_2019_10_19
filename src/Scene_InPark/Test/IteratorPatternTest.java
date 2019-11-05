@@ -16,7 +16,7 @@ public class IteratorPatternTest {
         FloatParade floatParade = FloatParade.getInstance();
 
         //打印花车游行序列
-        System.out.print("花车游行序列为: ");
+        System.out.print("使用迭代器获得花车游行序列为: ");
         Iterator it = floatParade.getIterator();
         Floats theFloat;
         while (it.hasNext()) {

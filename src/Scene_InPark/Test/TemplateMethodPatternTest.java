@@ -19,7 +19,7 @@ public class TemplateMethodPatternTest {
         //默认设置下午计划
         mPlan.setStrategy(1);
 
-        System.out.println("游园规划：买票、入场、上午活动（待计划）、午饭、过山车、游乐园、滑雪、出场、晚饭、住宿");
+        System.out.println("游园规划：进入迪士尼 上午活动（待计划） 吃午饭 过山车 游乐园 滑雪 出门离去 吃晚饭 去住宿");
         System.out.println("请自行规划上午计划：");
         if(scan.hasNextLine()) {
             morningPlan = scan.nextLine();
