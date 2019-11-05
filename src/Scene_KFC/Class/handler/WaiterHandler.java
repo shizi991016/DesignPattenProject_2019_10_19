@@ -4,7 +4,7 @@ public class WaiterHandler extends Handler  {
     @Override
     public void handleRequest(int request){
         System.out.println("服务员正处理该请求-->");
-        if(request==1)
+        if(request<=1)
         {
             System.out.println("请求处理完成");
         }

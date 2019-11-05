@@ -19,14 +19,14 @@ public class FlyweightPatternTest {
         String areaName=sc.next();
         while (dis.getFacilitie(areaName)!=null)
         {
-            System.out.println("已经存在名为"+areaName+"的区域，请重新输入名称！");
+            System.out.println("已经存在名为"+areaName+"的区域或设施，请重新输入名称！");
             areaName=sc.next();
         }
         Facilitie mArea=dis.getFacilitie(areaName,2);
         System.out.println("调用享元工厂getFacilitie创建区域成功");
         System.out.println("\n"+"请输入您要创建的新区域所在的区域名：");
         String areaParentArea=sc.next();
-        while(dis.getFacilitie(areaParentArea)==null||areaParentArea.equals(areaName))
+        while(dis.getFacilitie(areaParentArea)==null||areaParentArea.equals(areaName)||dis.getFacilitie(areaParentArea).returnType()==1)
         {
             System.out.println("请输入正确的区域名！");
             areaParentArea=sc.next();

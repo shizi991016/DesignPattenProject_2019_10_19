@@ -18,9 +18,15 @@ public class CompositePatternTest {
         System.out.println("请输入您要查询的区域名：");
         Scanner sc = new Scanner(System.in);
         String findAreaName=sc.next();
-        while (dis.getFacilitie(findAreaName)==null)
+        while (dis.getFacilitie(findAreaName)==null||dis.getFacilitie(findAreaName).returnType()==1)
         {
-            System.out.println("不存在区域"+findAreaName+"\n请输入正确的区域名");
+            if(dis.getFacilitie(findAreaName)==null) {
+                System.out.println("不存在区域" + findAreaName);
+            }
+            else{
+                System.out.println("这是一个设施！");
+            }
+            System.out.println("请输入正确的区域名");
             findAreaName=sc.next();
         }
         //打印内容
@@ -35,9 +41,15 @@ public class CompositePatternTest {
         System.out.println("游乐园调用printAll和printDirectory打印设施内容和位置");
         System.out.println("请输入您要查询的设施名：");
         String findFcName=sc.next();
-        while (dis.getFacilitie(findFcName)==null)
+        while (dis.getFacilitie(findFcName)==null||dis.getFacilitie(findFcName).returnType()==2)
         {
-            System.out.println("不存在区域"+findFcName+"\n请输入正确的区域名");
+            if(dis.getFacilitie(findFcName)==null) {
+                System.out.println("不存在设施" + findFcName);
+            }
+            else{
+                System.out.println("这是一个区域！");
+            }
+            System.out.println("请输入正确的设施名");
             findFcName=sc.next();
         }
         //打印内容

@@ -5,7 +5,7 @@ public class DirectorHandler extends Handler {
     public void handleRequest(int request)
     {
         System.out.println("店长正处理该请求-->");
-        if(request==3)
+        if(request<=3)
         {
             System.out.println("请求处理完成");
         }

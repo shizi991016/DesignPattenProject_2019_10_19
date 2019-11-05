@@ -1,9 +1,11 @@
 package Scene_InPark.Class.Facilitie;
 
 public class ConcreteFacilitie extends Facilitie{
+
 	public ConcreteFacilitie(String name)
 	{
 		this.name=name;
+		this.type=1;
 		this.TouristFlow=0;
 	}
 

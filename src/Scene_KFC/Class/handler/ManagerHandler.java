@@ -5,7 +5,7 @@ public class ManagerHandler extends Handler {
     public void handleRequest(int request)
     {
         System.out.println("大堂经理正处理该请求-->");
-        if(request==2)
+        if(request<=2)
         {
             System.out.println("请求处理完成");
         }

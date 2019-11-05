@@ -11,6 +11,7 @@ public class Area extends Facilitie{
 	public Area(String name)
 	{
 		this.name=name;
+		this.type=2;
 		this.TouristFlow=0;
 		this.mFacilities=new ArrayList<Facilitie>();
 	}

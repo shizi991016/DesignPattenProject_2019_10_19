@@ -222,5 +222,5 @@ public class DesignPattern_main {
 			type = input.nextLine();
 		}
 	}
-
+	
 }

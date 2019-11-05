@@ -4,6 +4,7 @@ public abstract class Facilitie {
 	protected String name;
 	protected Facilitie parent;
 	protected int TouristFlow;
+	protected int type;
 	//构造函数
 	public Facilitie(String name)
 	{
@@ -49,4 +50,9 @@ public abstract class Facilitie {
 
 	//打所有设施和区域的客流量
 	public abstract String printFlow();
+
+	//返回设施类型（设施或区域）
+	public int returnType(){
+		return type;
+	}
 }
