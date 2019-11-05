@@ -5,7 +5,7 @@ public class PAndCPatternTest {
     public static void pandcPatternTest ()
     {
         System.out.println("\n" +"----------------------------------------");
-        System.out.println("26.生产者消费者模式(Producer consumer Pattern)：");
+        System.out.println("31.生产者消费者模式(Producer consumer Pattern)：");
         System.out.println("\n"+"测试一：");
 
         Storage storage = new Storage();
