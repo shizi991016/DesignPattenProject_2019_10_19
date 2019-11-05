@@ -95,8 +95,8 @@ public class DesignPattern_main {
 		// 模式二十六 原型模式
 		PrototypePatternTest.prototypePatternTest();
 
-		// 模式二十七 生产者消费者模式
-		PAndCPatternTest.pandcPatternTest();
+		// 模式二十七 责任链模式
+		ResponsibilityPatternTest.responsibilityPatternTest();
 
 		// 模式二十八 不变模式
 		ImmutablePatternTest.immutablePatternTest();
@@ -107,8 +107,8 @@ public class DesignPattern_main {
 		// 模式三十 装饰模式
 		DecoratorPatternTest.decoratorPatternTest();
 
-		// 模式三十一 责任链模式
-		ResponsibilityPatternTest.responsibilityPatternTest();
+		// 模式三十一 生产者消费者模式
+		PAndCPatternTest.pandcPatternTest();
 	}
 
 }
