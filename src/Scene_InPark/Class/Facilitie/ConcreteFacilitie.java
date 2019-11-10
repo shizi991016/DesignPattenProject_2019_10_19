@@ -24,6 +24,6 @@ public class ConcreteFacilitie extends Facilitie{
 	//visitor模式中主要的accept函数
 	@Override
 	public void accept(Tourist tourist){
-		this.accept(tourist);
+		tourist.Visit(this);
 	}
 }

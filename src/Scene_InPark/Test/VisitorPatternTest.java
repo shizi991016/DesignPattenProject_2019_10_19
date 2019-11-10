@@ -17,10 +17,9 @@ public class VisitorPatternTest {
         System.out.println("visitorA调用visit函数改变设施的客流量\n" +
                 "游乐园调用printFlow函数打印所有设施客流量");
         System.out.println("游客A的游览路线为：\nferrisWheel-->aquarium-->kfc");
-        //调用visit函数来进行对设施客流量的修改
-        visitorA.Visit(dis.getFacilitie("ferrisWheel"));
-        visitorA.Visit(dis.getFacilitie("aquarium"));
-        visitorA.Visit(dis.getFacilitie("kfc"));
+        dis.getFacilitie("ferrisWheel").accept(visitorA);
+        dis.getFacilitie("aquarium").accept(visitorA);
+        dis.getFacilitie("kfc").accept(visitorA);
         //打印园中所有设施客流量
         System.out.println("游客A游览后所有设施的客流量如下：");
         System.out.println(dis.getFacilitie("DreamIsland").printFlow());
@@ -30,10 +29,10 @@ public class VisitorPatternTest {
         System.out.println("visitorB调用visit函数改变设施的客流量\n" +
                 "游乐园调用printFlow函数打印所有设施客流量");
         System.out.println("游客B的游览路线为：\naquarium-->rollerCoaster-->kfc-->D");
-        visitorB.Visit(dis.getFacilitie("aquarium"));
-        visitorB.Visit(dis.getFacilitie("rollerCoaster"));
-        visitorB.Visit(dis.getFacilitie("kfc"));
-        visitorB.Visit(dis.getFacilitie("D"));
+        dis.getFacilitie("aquarium").accept(visitorB);
+        dis.getFacilitie("rollerCoaster").accept(visitorB);
+        dis.getFacilitie("kfc").accept(visitorB);
+        dis.getFacilitie("D").accept(visitorB);
         System.out.println("游客B游览后所有设施的客流量如下：");
         System.out.println(dis.getFacilitie("DreamIsland").printFlow());
         System.out.println("----------------------------------------");

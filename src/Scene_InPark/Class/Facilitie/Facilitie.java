@@ -33,7 +33,7 @@ public abstract class Facilitie {
 		return directory.toString();
 	}
 
-	//comporite模式中的包含关系的建立
+	//composite模式中的包含关系的建立
 	public boolean addChild(Facilitie fc){
 		throw new UnsupportedOperationException("addChild not supported!");
 	};
