@@ -1,0 +1,22 @@
+package BlindHelpScene;
+
+import BlindHelpScene.AdapterAndTemplateMethod.*;
+
+public class TemplateMethodTest {
+    /**
+     * 程序入口
+     *
+     * @param args 命令行参数
+     */
+    public static void templateMethodTest(String[] args) {
+        System.out.println("------------Template Method test in BlindHelpScene------------");
+        // 构造两种指南
+        TalkingGuide talkingGuide = new TalkingGuide();
+        VisualGuide visualGuide = new VisualGuide();
+
+        //对模板方式的guide()方法测试
+        System.out.println("一个父类下的两种不同guide：");
+        talkingGuide.guide();
+        visualGuide.guide();
+    }
+}

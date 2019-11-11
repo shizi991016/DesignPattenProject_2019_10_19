@@ -1,0 +1,20 @@
+package PerformCharacterFactory;
+
+import PerformCharacterFactory.FactoryMethodPattern.*;
+
+public class FactoryPatternTest {
+    private static CharacterFactory factory1,factory2;
+
+    public static void factoryPatternTest(String[] args){
+        //创造两个工厂，其中的产品在使用时工厂自动生产
+        factory1 = new PrincessCharacterFactory();
+        factory2 = new DwarfCharacterFactory();
+
+        //输出
+        System.out.println("******** Using the Factory Method Pattern ********");
+        System.out.println("Creating a princess:");
+        factory1.performing();
+        System.out.println("Creating a dwarf:");
+        factory2.performing();
+    }
+}
