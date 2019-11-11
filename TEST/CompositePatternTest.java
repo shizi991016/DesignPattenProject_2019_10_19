@@ -12,14 +12,8 @@ public class CompositePatternTest {
         Pizza lovePizza = new Pizza();
         lovePizza.setPrice(100);
         lovePizza.setName("lovePizza");
-        //实例化一个rice对象
-        Rice loveRice = new Rice();
-        loveRice.setName("loveRice");
-        loveRice.setPrice(10);
 
         menu.addFood(lovePizza);
-        menu.addFood(loveRice);
-
         menu.display();
     }
 }
