@@ -10,5 +10,7 @@ public class ProxyPatternTest {
         ProxyPhotoRoom room = new ProxyPhotoRoom();
         User user = new User();
         user.request(room);
+        user.request(room);
+        user.request(room);
     }
 }
